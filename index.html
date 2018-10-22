@@ -7,6 +7,7 @@
         <!-- Latest compiled and minified CSS -->
 		<link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.7/css/bootstrap.min.css" integrity="sha384-BVYiiSIFeK1dGmJRAkycuHAHRg32OmUcww7on3RYdg4Va+PmSTsz/K68vbdEjh4u" crossorigin=	"anonymous">
 		<!-- Latest compiled and minified JavaScript -->
+        <script src="https://code.jquery.com/jquery-3.3.1.slim.min.js" integrity="sha384-q8i/X+965DzO0rT7abK41JStQIAqVgRVzpbzo5smXKp4YfRvH+8abtTE1Pi6jizo" crossorigin="anonymous"></script>
 		<script src="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.7/js/bootstrap.min.js" integrity="sha384-Tc5IQib027qvyjSMfHjOMaLkfuWVxZxUPnCJA7l2mCWNIpG9mGCD8wGNIcPD7Txa" crossorigin="anonymous"></script>
         <link rel="stylesheet" href="./css/master.css">
         <!-- For Mobile Users -->
@@ -21,379 +22,42 @@
         </div>
         <div class="navigation">
             <div class="notwide flex_container">
-                <a href="#ethos">Ethos</a>
-                <a href="#brand">Logo/Name</a>
-                <a href="#color">Colors</a>
-                <a href="#type">Type</a>
-                <a href="#tone">Tone</a>
-                <a href="#space">Space</a>
-                <a href="#imgs">Images</a>
-                <a href="#web">Web</a>
+                <a href="#ethos">Home</a>
+                <a href="#brand">About Us</a>
+                <a href="#type">Courses</a>
+                <a href="#tone">Activities</a>
+                <a href="#space">Awards</a>
             </div>
         </div>
         <div>
             <!-- Why the Style Guide? -->
             <section>
-                <h1>Style Guide?</h1>
-                <hr>
-                <p>
-                    A style guide helps create a consistent <em>Brand Image</em>.
-                </p>
-                <p> This style guide was created for Boyertown TSA's 2018-19 webmaster team, based on the original style guide from RIT's BTC club by Ethan Witherington.</p>
-            </section>
-            <!-- Brand Ethos -->
-            <div class="base whitesection">
-            <section>
-                <a class="magic" id="ethos"></a>
-                <h1>Brand Ethos</h1>
-                <hr>
-                <!-- Club purpose -->
-                <h2>Purpose</h2>
-                <p> <em>Chapter Resource and Public-Facing Promotion</em></p>
-                <p> Our website will assist chapter members while also promoting the chapter to the general public.</p>
-                <p> Content will include chapter fundraisers, activities, officers, history, motto, creed, logo, images of chapter functions, past submissions, a competitive record, and more.</p>
-                <p> This site will also include our CTE, with a listing and details of STEM courses at the school. We must include teacher bios. We need to find a way to effectively organize this abundance of information.</p>
-                <!-- Club Audience -->
-                <h2>Rubric </h2>
-                <p>The site is worth 130/200 points, which is significant. Of that, 100/130 are related to the chapter and CTE half of the site.</p>
-                <p>
-                    Our target audience requires a specific tone of voice to
-                    have the maximum impact. For more information, see the
-                    <a class="intextlink" href="#tone">Tone and Voice</a> section.
-                </p>
-                <p> The rubric includes the following sections</p>
-                <ul>
-                    <li>Ease of Layout and Navigation (20)</li>
-                    <li>Well-used Graphics and an Attractive Color Scheme (20)</li>
-                    <li>Usability on most Devices and Browsers; No Broken Links (20)</li>
-                    <li>Spelling and Grammar (10)</li>
-                    <li>CTE Content (20)</li>
-                    <li>Chapter Content (20)</li>
-                </ul>
-            </section>
-            </div>
-            <!-- Logo/Brandname -->
-            <div class="gray">
-            <section>
-                <a class="magic" id="brand"></a>
-                <h1>Logo, Brandname</h1>
-                <hr>
-                <!-- Logo svg: Hamster -->
-                <h2>Logo</h2>
-                <p> Our logo forever is the TSA logo in white, without any text in top or bottom.</p>
-                <p> It's a PNG file so it's transparent. I don't think we need it anywhere other than the top.</p>
-                <p>
-                    Appropriate backgrounds include Dark, DarkGray, and Base.
-                    Accent and lighter colors provide too little contrast.
-                    See the
-                    <a class="intextlink" href="#color">
-                        Color Section
-                    </a>
-                    for more..
-                </p>
-                <div class="flex_container" id="logos">
-                    <img src="./images/logo.png" width="20%" class="dark" alt="">
-                    <img src="./images/logo.png" width="20%" class="darkgray" alt="">
-                    <img src="./images/logo.png" width="20%" class="base" alt="">
-                </div>
-                <!-- Text name conventions -->
-                <h2>Brandname</h2>
-                <p>
-                    <b>Long (Official) Form:</b>
-                </p>
-                <span class="brand">Boyertown Area Senior High School Technology Student Association</span>
-                <ul>
-                    <li>First letter of each word is capitalized</li>
-                    <li>We may not use this anywhere on the actual site</li>
-                    <li>Stand-Alone, no other words should follow it.</li>
-                    <li>Roboto Bold</li>
-                </ul>
-                <p>
-                    <b>Short (Informal) Form:</b>
-                </p>
-                <span class="brand">BASH TSA</span>
-                <ul>
-                    <li>Space, no hyphen</li>
-                    <li>Roboto Bold</li>
-                    <li>May be followed by other specifiers</li>
-                    <li>For Example:</li>
-                </ul>
-                <span class="brand">BASH TSA Style-Guide</span>
-                <span class="brand">BASH TSA Wiki</span>
-            </section>
-            </div>
-            <!-- Color -->
-            <section>
-                <a class="magic" id="color"></a>
-                <h1>Color Palette</h1>
-                <hr>
-                <div class="flex_container" id="colors">
-                    <div class="swatch">
-                        <div class="color dark"></div>
-                        <p>
-                            Dark: #1e1e1e
-                        </p>
+                <div class="row">
+                    <div class="col-sm-6">
+                        <div class="imgbox">
+                            <img src="./images/pinkchapter.jpg" alt class="boximg">
+                        </div>
                     </div>
-                    <div class="swatch">
-                        <div class="color darkgray"></div>
+                    <div class="col-sm-6">
+                        <h1>Boyertown TSA</h1>
+                        <hr>
                         <p>
-                            DarkGray: #43494D
+                            Boyertown High School's TSA chapter is one of the premier TSA chapters in the nation.
                         </p>
-                    </div>
-                    <div class="swatch">
-                        <div class="color gray"></div>
                         <p>
-                            Gray: #E9EBED
-                        </p>
-                    </div>
-                    <div class="swatch">
-                        <div class="color lightgray"></div>
-                        <p>
-                            LightGray: #F5F5F5
-                        </p>
-                    </div>
-                    <div class="swatch">
-                        <div class="color light"></div>
-                        <p>
-                            Light: #FBFBFB
-                        </p>
-                    </div>
-                    <div class="swatch">
-                        <div class="color base"></div>
-                        <p>
-                            Base: #3e92cc
-                        </p>
-                    </div>
-                    <div class="swatch">
-                        <div class="color hilight"></div>
-                        <p>
-                            Hilight: #3E92CC
-                        </p>
-                    </div>
-                    <div class="swatch">
-                        <div class="color accent"></div>
-                        <p>
-                            Accent: #D62828
+                            This site includes an overview of chapter history, information, activities, fundraisers, and awards, as well as details of the STEM courses, teachers, and projects that students can expect here at Boyertown High School.
                         </p>
                     </div>
                 </div>
-                <p>
-                    The main color of the logo was extracted as the Accent color.
-                    From there, Base was chosen such that Accent would
-                    complement it.
-                </p>
-                <p>
-                    When using these colors, ensure there is enough contrast
-                    between backgrounds and text. LightGray is typically the
-                    best background, as there are both lighter and darker colors
-                    to complement it.
-                </p>
             </section>
-            <!-- Typography -->
-            <div class="gray">
-            <section>
-                <a class="magic" id="type"></a>
-                <h1>Typography</h1>
-                <hr>
-                <h2>Poppins 700</h2>
-                <p style="font-family: Poppins; font-weight: 700">
-                    Lorem ipsum dolor sit amet, consectetur adipiscing elit.
-                    Donec congue faucibus turpis, quis accumsan odio ullamcorper
-                    eget. Nulla facilisi. Fusce molestie porttitor bibendum.
-                </p>
-                <h2>Poppins 400</h2>
-                <p style="font-family: Poppins; font-weight: 400">
-                    Lorem ipsum dolor sit amet, consectetur adipiscing elit.
-                    Aliquam ante purus, ornare ut ante sit amet, tristique
-                    rhoncus nisi. Pellentesque habitant morbi tristique senectus
-                    et netus et malesuada fames ac turpis egestas. Quisque ut
-                    interdum felis, et rutrum sem. Morbi et laoreet nisi.
-                </p>
-                <h2>Muli 400</h2>
-                <p style="font-family: 'Muli'; font-weight: 400">
-                    Lorem ipsum dolor sit amet, consectetur adipiscing elit.
-                    Praesent fringilla ante tincidunt sollicitudin vehicula. In
-                    hac habitasse platea dictumst. Duis nibh elit, iaculis sit
-                    amet nulla sed, mattis hendrerit nisl. Cras egestas sapien
-                    ut ante iaculis condimentum. Lorem ipsum dolor sit amet,
-                    consectetur adipiscing elit.
-                </p>
-                <h2>Muli 400i</h2>
-                <p><em>
-                    Lorem ipsum dolor sit amet, consectetur adipiscing elit.
-                    Nullam vel ipsum lacus. In volutpat tristique diam.
-                    Phasellus vitae felis sodales, pellentesque elit sed,
-                    tristique eros. Pellentesque euismod facilisis ex sed
-                    pharetra. Suspendisse eget blandit magna.
-                </em></p>
-            </section>
-            </div>
-            <!-- Voice and Writing Style -->
-            <section>
-                <a class="magic" id="tone"></a>
-                <h1>Tone, Voice, and General Feel</h1>
-                <hr>
-                <p>
-                    Other webmaster sites that had cool vibes
-                    <a href="https://hebrontsa.org/">
-                        https://hebrontsa.org/ (3rd)
-                    </a>,
-                    <a href="https://akshitdewan.github.io/TSA-Webmaster/">
-                        https://akshitdewan.github.io/TSA-Webmaster/ (6th)
-                    </a>,
-                    <a href="http://andreas.lmtsa.org/index.html">
-                        http://andreas.lmtsa.org/index.html (4th)
-                    </a>,
-                    and
-                    <a href="https://www.ihstsa.cf/index.html">
-                        https://www.ihstsa.cf/index.html (5th)
-                    </a>
-                </p>
-                <p>
-                    We want to write formally, but not academically. The feel of our website last year was satisfactory for this. We may want to consider the inclusion of 'Embrace the Succ' and probably ask Pennington for a new motto.
-                </p>
-            </section>
-            <!-- WhiteSpace, Margins -->
-            <div class="base whitesection">
-            <section>
-                <a class="magic" id="space"></a>
-                <h1>Use of space</h1>
-                <hr>
-                <p>
-                    1rem margins should be everywhere. Items in boxes should
-                    also employ 1rem padding.
-                </p>
-                <div class="flex_container">
-                    <div class="box">
-                        Box1
-                    </div>
-                    <div class="box">
-                        Box2
-                    </div>
-                    <div class="box">
-                        Box3
-                    </div>
-                    <div class="box">
-                        Box with more content.
-                    </div>
-                </div>
-                <p>
-                    <b>REM</b> units should be used in most cases, as they are
-                    consistent accross elements. <b>EM</b> units should be used
-                    for spacing that changes with element font size, such as the
-                    <i>line-height</i> property.
-                </p>
-            </section>
-            </div>
-            <!-- Web Elements -->
-            <section>
-                <a class="magic" id="imgs"></a>
-                <h1>Images</h1>
-                <hr>
-                <p>
-                    Specifications for displaying images both alone and with text.
-                </p>
-                <h2>Box Picture</h2>
-                <p>A box picture is something sitting independently that doesn't flow very well with the content. These will definitely only be on the chapter half of the site.</p>
-                <div class="box imgbox">
-                    <img src="./images/bigblue.jpg" alt="" class="boximg">
-                </div>
-                <h2>Smaller Box Picture</h2>
-                <p>A box picture is something sitting independently that doesn't flow very well with the content. These will definitely only be on the chapter half of the site. This one is smaller, to see if we like it. If we do, I should change <b>imgbox</b> to have <i>width:60%; margin-right:auto; margin-left:auto;</i></p>
-                <div class="box imgbox" style="width:60%; margin-right:auto; margin-left:auto;">
-                    <img src="./images/bigblue.jpg" alt="" class="boximg">
-                </div>
-                <h2>Picture and Right Text</h2>
-                <p>A picture with text on the right.</p>
-                <div class="flex_container flex_left">
-                    <div class="box half">
-                        <img src="./images/bigblue.jpg" alt="" class="boximg">
-                    </div>
+            <footer>
+                <div class="notwide">
                     <p>
-                        This is a body of text. But it's not a short one, it's a long one, like, really long. It shows correct text wrapping. There are a few options for justifying text beside an image, which we will of course explore in this section. This will be the filler paragraph for all.
+                        Footer shall contain sitemap, copyright info, etc. Still in
+                        Development. Contact us button.
                     </p>
                 </div>
-                <h2>Picture and left-Justified Left Text</h2>
-                <p>A picture with text on the left, left-justified.</p>
-                <div class="flex_container flex_right">
-                    <p>
-                        This is a body of text. But it's not a short one, it's a long one, like, really long. It shows correct text wrapping. There are a few options for justifying text beside an image, which we will of course explore in this section. This will be the filler paragraph for all.
-                    </p>
-                    <div class="box half">
-                        <img src="./images/bigblue.jpg" alt="" class="boximg">
-                    </div>
-                </div>
-                <h2>Picture and right-Justified Left Text</h2>
-                <p>A picture with text on the left, right-justified. I doubt we want this, but if we do, I need to change <b>flex_right</b> to have <i>text-align:right;</i></p>
-                <div class="flex_container flex_right" style="text-align:right;">
-                    <p>
-                        This is a body of text. But it's not a short one, it's a long one, like, really long. It shows correct text wrapping. There are a few options for justifying text beside an image, which we will of course explore in this section. This will be the filler paragraph for all.
-                    </p>
-                    <div class="box half">
-                        <img src="./images/bigblue.jpg" alt="" class="boximg">
-                    </div>
-                </div>
-                <h2>Boxless Picture and Right Text</h2>
-                <p>A boxless picture with text on the right.</p>
-                <div class="flex_container flex_left">
-                    <div class="half">
-                        <img src="./images/bigblue.jpg" alt="" class="boximg">
-                    </div>
-                    <p>
-                        This is a body of text. But it's not a short one, it's a long one, like, really long. It shows correct text wrapping. There are a few options for justifying text beside an image, which we will of course explore in this section. This will be the filler paragraph for all.
-                    </p>
-                </div>
-                <h2>Boxless Big Picture</h2>
-                <p>A big image but without the box. If we decide to use these, just remove the <b>box</b> class.</p>
-                <div class="imgbox">
-                    <img src="./images/bigblue.jpg" alt="" class="boximg">
-                </div>
-                <h2>Smaller Boxless Picture</h2>
-                <p>A smaller image but without the box. If we decide to use these, just remove the <b>box</b> class and use the small image specifications defined above.</p>
-                <div class="imgbox" style="width:60%; margin-right:auto; margin-left:auto;">
-                    <img src="./images/bigblue.jpg" alt="" class="boximg">
-                </div>
-            </section>
-            <!-- Web Elements -->
-            <section>
-                <a class="magic" id="web"></a>
-                <h1>Web Elements</h1>
-                <hr>
-                <p>
-                    Guidelines for special elements our site.
-                </p>
-                <h2>Box-Shadow</h2>
-                <div class="box">
-                    Hi! I'm a box.
-                </div>
-                <h2>Buttons!</h2>
-                <p>
-                    I like this part. Let's make some buttons.
-                </p>
-                <div class="flex_container">
-                    <a href="#" class="button b_accent">
-                        Important!
-                    </a>
-                    <a href="#" class="button b_base">
-                        Casual.
-                    </a>
-                    <a href="#" class="button b_hilight">
-                        Exciting
-                    </a>
-                    <a href="#" class="button b_dark">
-                        <em>Fancy</em>
-                    </a>
-                </div>
-                <h2>Footer:</h2>
-        </div>
-        <footer>
-            <div class="notwide">
-                <p>
-                    Footer shall contain sitemap, copyright info, etc. Still in
-                    Development. Contact us button.
-                </p>
-            </div>
-        </footer>
+            </footer>
         <script src="https://cdn.jsdelivr.net/gh/cferdinandi/smooth-scroll@14.0.0/dist/smooth-scroll.polyfills.min.js"></script>
         <script>
             var scroll = new SmoothScroll('a[href*="#"]');

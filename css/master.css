@@ -42,6 +42,9 @@ Styling for TSA Webmaster style-guide.
 .aesthetic {
   letter-spacing: 0.5px;
 }
+html{
+  font-size:14px;  /* This literally defines the font size of the entire doc - important ! */ 
+}
 body {
   margin: 0;
   padding: 0 0;
