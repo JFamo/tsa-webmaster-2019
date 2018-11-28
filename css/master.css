@@ -122,8 +122,7 @@ a:hover {
   color: #d62828;
 }
 .notwide {
-  max-width: 800px;
-  margin: 0 auto;
+  max-width: 1200px;
 }
 .magic {
   display: block;
@@ -363,6 +362,26 @@ footer {
 
 .nav-link{
   color:white !important;
+  text-decoration: none;
+  transition: color 0.1s;
+  display: inline-block;
+}
+
+.nav-link::after{
+  content: '';
+  width: 0;
+  display: block;
+  height: 2px;
+  transition: width 0.3s;
+  background: #D62828 !important;
+}
+
+.nav-link:hover::after{
+  width: 100%;
+}
+
+.nav-link:hover{
+  color: #D62828 !important;
 }
 
 .bodysection p{
