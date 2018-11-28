@@ -47,6 +47,11 @@ html{
   height:100vh;
   overflow-x: hidden;
 }
+@media only screen and (max-width: 575px) {
+  html{
+  overflow-x: auto;
+}
+}
 body {
   margin: 0;
   padding: 0 0;
@@ -62,6 +67,11 @@ section {
   padding-bottom: 3rem;
   margin:0 auto;
   min-height:80%;
+}
+@media only screen and (max-width: 575px) {
+  section {
+    padding-top: 0.5rem;
+  }
 }
 h1,
 h2 {
@@ -84,7 +94,7 @@ hr {
   height: 3px;
   margin: 1 1rem 1rem;
 }
-@media only screen and (max-width: 500px) {
+@media only screen and (max-width: 575px) {
   hr {
     background-color: #d62828;
     margin: -1rem 0 1rem 0;
@@ -94,10 +104,15 @@ p,
 ul {
   padding-left: 1rem;
 }
-@media only screen and (max-width: 500px) {
-  p,
-  ul, small {
+@media only screen and (max-width: 575px) {
+  p, ul, small {
     padding: 0;
+  }
+  .header p{
+    padding-left: 14px;
+  }
+  .header small{
+    padding-left: 14px;
   }
 }
 a {
@@ -188,11 +203,7 @@ a:hover {
   display: inline-block;
   float:center;
 }
-@media only screen and (max-width: 500px) {
-  .header img {
-    width: 8rem;
-    max-width: 50%;
-  }
+@media only screen and (max-width: 575px) {
   .header {
     padding: 1rem 1rem 1rem 1rem;
   }
@@ -332,13 +343,10 @@ a:hover {
   background-color:white;
 }
 footer {
-  margin: 0 -2rem;
+  margin: 0;
   background-color: #0a2463;
-  color: #E9EBED;
-  overflow: auto;
+  color: white;
   padding: 1rem;
-  box-sizing: border-box;
-  height:50px;
 }
 
 .nopadding{
@@ -357,6 +365,25 @@ footer {
   padding-left:0;
 }
 
+@media only screen and (max-width: 575px) {
+  .bodysection{
+    padding-left:40px;
+  }
+}
+
 .verticalCenter{
   position:relative; top:50%; -ms-transform: translateY(-50%); transform: translateY(-50%);
+}
+
+@media only screen and (max-width: 575px) {
+  .col, .col-sm-6 {
+    padding-right:0 !important;
+    margin-right:0 !important;
+  }
+}
+
+@media only screen and (max-width: 575px) {
+  .row {
+    max-width:100% !important;
+  }
 }
