@@ -157,7 +157,7 @@ a:hover {
   font-family: monospace;
 }
 .header {
-  background-color: white;
+  background-color: #0a2463;
   padding: 1rem 3rem 1rem 3rem;
   box-shadow: 0 2px 4px 0 rgba(0, 0, 0, 0.2), 0 3px 10px 0 rgba(0, 0, 0, 0.19);
 }
@@ -168,6 +168,7 @@ a:hover {
   word-wrap: break-word;
   font-size:1.5rem;
   margin:0;
+  color:white;
 }
 .header small{
   font-family: 'Poppins', sans-serif;
@@ -177,6 +178,7 @@ a:hover {
   font-size:1rem;
   margin:0;
   padding-left: 1rem;
+  color:white;
 }
 .header .notwide {
   justify-content: center;
@@ -345,6 +347,10 @@ footer {
 
 .nav-item{
   font-size:1rem;
+}
+
+.nav-link{
+  color:white !important;
 }
 
 .bodysection p{
