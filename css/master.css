@@ -207,6 +207,10 @@ a:hover {
   .header {
     padding: 1rem 1rem 1rem 1rem;
   }
+
+  .header img{
+    display: none !important;
+  }
 }
 .header h1 {
   display: inline-block;
@@ -380,9 +384,7 @@ footer {
     padding-right:0 !important;
     margin-right:0 !important;
   }
-}
 
-@media only screen and (max-width: 575px) {
   .row {
     max-width:100% !important;
   }
