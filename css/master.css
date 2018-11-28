@@ -46,7 +46,6 @@ html{
   font-size:14px;  /* This literally defines the font size of the entire doc - important ! */ 
   height:100vh;
   overflow-x: hidden;
-  overflow-y: hidden;
 }
 body {
   margin: 0;
@@ -58,13 +57,10 @@ body {
   height:100vh;
 }
 section {
-  max-width:800px;
+  max-width:1200px;
   padding-top: 3rem;
   padding-bottom: 3rem;
   margin:0 auto;
-}
-.onesection{
-  height: calc(100vh - 54px - 106px - 50px);
 }
 h1,
 h2 {
@@ -99,7 +95,7 @@ ul {
 }
 @media only screen and (max-width: 500px) {
   p,
-  ul {
+  ul, small {
     padding: 0;
   }
 }
@@ -161,16 +157,33 @@ a:hover {
 }
 .header {
   background-color: #0a2463;
-  margin: 0 -2rem;
-  padding: 1rem;
+  padding: 2rem;
+  box-shadow: 0 2px 4px 0 rgba(0, 0, 0, 0.2), 0 3px 10px 0 rgba(0, 0, 0, 0.19);
+}
+.header p{
+  font-family: 'Poppins', sans-serif;
+  font-weight: 500;
+  letter-spacing: 0.5px;
+  word-wrap: break-word;
+  font-size:3rem;
+  margin:0;
+}
+.header small{
+  font-family: 'Poppins', sans-serif;
+  font-weight: 400;
+  letter-spacing: 0.5px;
+  word-wrap: break-word;
+  font-size:2rem;
+  margin:0;
+  padding-left: 1rem;
 }
 .header .notwide {
   justify-content: center;
 }
 .header img {
-  width: 5rem;
-  margin: 1rem;
+  margin: 0.1rem;
   display: inline-block;
+  float:center;
 }
 @media only screen and (max-width: 500px) {
   .header img {
@@ -320,4 +333,12 @@ footer {
   padding: 1rem;
   box-sizing: border-box;
   height:50px;
+}
+
+.nopadding{
+  padding:0;
+}
+
+.nav-item{
+  font-size:2rem;
 }
