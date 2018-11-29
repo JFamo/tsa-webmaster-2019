@@ -91,13 +91,13 @@ hr {
   border: 0;
   background-color: #0A2463;
   height: 3px;
-  margin: 1 1rem 1rem;
   width:100%;
 }
 @media only screen and (max-width: 575px) {
   hr {
-    background-color: #d62828;
-    margin: -1rem 0 1rem 0;
+  }
+  h1{
+    margin-left:1rem;
   }
 }
 p,
