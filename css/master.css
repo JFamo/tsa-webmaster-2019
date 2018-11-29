@@ -530,3 +530,7 @@ footer {
     max-width:100% !important;
   }
 }
+
+.activityRow{
+  padding-bottom:3rem;
+}
