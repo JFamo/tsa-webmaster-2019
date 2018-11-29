@@ -532,3 +532,7 @@ footer {
 .activityRow{
   padding-bottom:3rem;
 }
+
+.constantSize{
+  object-fit: cover;
+}
