@@ -64,7 +64,6 @@ body {
 section {
   max-width:1200px;
   padding-top: 3rem;
-  padding-bottom: 3rem;
   margin:0 auto;
   min-height:80%;
 }
@@ -321,6 +320,36 @@ a:hover {
 .teachercard:hover{
   transform: translate(0,-2px);
   box-shadow: 2px 3px 6px rgba(0, 0, 0, 0.16), 2px 3px 6px rgba(0, 0, 0, 0.23);
+}
+.projectcard{
+  text-align:center;
+  width:250px;
+  height:150px;
+}
+.projectcard p{
+  padding: 0.75rem 1rem 0rem 1rem;
+  margin-bottom:0rem;
+  color: #0a2463;
+  font-family: 'Poppins', sans-serif;
+  font-weight: 700;
+}
+.projectcard span{
+  border-radius: 50%;
+  width:80px;
+  height:80px;
+  display:inline-block;
+  transition: all 0.2s ease-in-out;
+  opacity:0.6;
+  background-size:cover;
+  cursor:pointer;
+}
+.projectcard span:hover{
+  box-shadow: 2px 3px 6px rgba(0, 0, 0, 0.16), 2px 3px 6px rgba(0, 0, 0, 0.23);
+  opacity:1;
+}
+.projectcard span:active{
+  box-shadow: 2px 3px 6px rgba(0, 0, 0, 0.16), 2px 3px 6px rgba(0, 0, 0, 0.23);
+  background-color: #d62828;
 }
 .box {
   border: 1px solid #1e1e1e;
