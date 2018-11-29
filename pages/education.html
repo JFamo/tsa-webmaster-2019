@@ -62,19 +62,189 @@
             <div class="row">
                 <div class="col-sm-6">
                   <div class="flex_container">
-                    <div class="coursecard"><p>Science</p><small>Click to view Science courses at BASH</small></div>
-                    <div class="coursecard"><p>Technology</p><small>Click to view Technology courses at BASH</small></div>
-                    <div class="coursecard"><p>Engineering</p><small>Click to view Engineering courses at BASH</small></div>  
-                    <div class="coursecard"><p>Art</p><small>Click to view Art courses at BASH</small></div>
-                    <div class="coursecard"><p>Business</p><small>Click to view Business courses at BASH</small></div>
-                    <div class="coursecard"><p>Math</p><small>Click to view Math courses at BASH</small></div>  
+                    <div class="coursecard" id="scienceCourseCard" data-courseType="science" onclick="loadCourses(this);"><p>Science</p><small>Click to view Science courses at BASH</small></div>
+                    <div class="coursecard" data-courseType="technology" onclick="loadCourses(this);"><p>Technology</p><small>Click to view Technology courses at BASH</small></div>
+                    <div class="coursecard" data-courseType="engineering" onclick="loadCourses(this);"><p>Engineering</p><small>Click to view Engineering courses at BASH</small></div>  
+                    <div class="coursecard" data-courseType="art" onclick="loadCourses(this);"><p>Art</p><small>Click to view Art courses at BASH</small></div>
+                    <div class="coursecard" data-courseType="business" onclick="loadCourses(this);"><p>Business</p><small>Click to view Business courses at BASH</small></div>
+                    <div class="coursecard" data-courseType="math" onclick="loadCourses(this);"><p>Math</p><small>Click to view Math courses at BASH</small></div>  
                   </div>
                 </div>
                 <div class="col-sm-6 bodysection">
+                  <div class="courseSection" data-courseType="business">
                     <h2>Honors Java</h2>
                     <p>
-                        In <span class="text_hilight">Honors Java</span>, tenth through twelvth grade students learn fundamental programming techniques and get to chill with the strangest dang teacher on the whole dang diddly darn planet. The one and only Jimbo hiryak disperses his java knowledge with an iron fist, and that is why we are out of carrots.
+                        In <span class="text_hilight">Honors Java</span>, tenth through twelvth grade students learn fundamental programming techniques and get to chill with Jimbo Hiryak.
                     </p>
+                  </div>
+                  <div class="courseSection" data-courseType="science">
+                    <h2>AP Chemistry</h2>
+                    <p>
+                        In <span class="text_hilight">AP Chemistry</span>, students learn basic concepts in thermo, nuclear, and jessica donovan chemistry.
+                    </p>
+                  </div>
+                  <div class="courseSection" data-courseType="science">
+                    <h2>AP Biology</h2>
+                    <p>
+                        In <span class="text_hilight">AP Biology</span>, Asher Hamrick learns how DNA makes him a cool cat and builds a girlfriend. It's basically the plot of Weird Science.
+                    </p>
+                  </div>
+                  <div class="courseSection" data-courseType="science">
+                    <h2>AP Physics 1</h2>
+                    <p>
+                        In <span class="text_hilight">AP Physics 1</span>, students apply algebra concepts to do physics, assuming that Mrs. Miller is able to understand the textbook.
+                    </p>
+                  </div>
+                  <div class="courseSection" data-courseType="science">
+                    <h2>AP Physics C</h2>
+                    <p>
+                        In <span class="text_hilight">AP Physics C</span>, students apply calculus concepts to do physics, assuming that Mrs. Cassidy is able to explain the textbook. It's acceleration due to the force of gravity, not gravity - imbecile.
+                    </p>
+                  </div>
+                  <div class="courseSection" data-courseType="science">
+                    <h2>AP Environmental Science</h2>
+                    <p>
+                        In <span class="text_hilight">AP Environmental Science</span>, I'm pretty sure you just take field trips and that's it.
+                    </p>
+                  </div>
+                  <div class="courseSection" data-courseType="engineering">
+                    <h2>Technical Drawing</h2>
+                    <p>
+                        In <span class="text_hilight">Technical Drawing</span>, nathan james michener was student of the year.
+                    </p>
+                  </div>
+                  <div class="courseSection" data-courseType="engineering">
+                    <h2>Advanced Engineering</h2>
+                    <p>
+                        In <span class="text_hilight">Advanced Engineering</span>, students use basic skills from Tech Drawing to produce solutions to engineering problems using 3D Printing and SolidWorks.
+                    </p>
+                  </div>
+                  <div class="courseSection" data-courseType="engineering">
+                    <h2>Advanced Materials Engineering</h2>
+                    <p>
+                        In <span class="text_hilight">Advanced Materials Engineering</span>, students further manufacturing skills by designing complex objects and manufacturing technologies.
+                    </p>
+                  </div>
+                  <div class="courseSection" data-courseType="technology">
+                    <h2>Advanced Multimedia Technologies</h2>
+                    <p>
+                        In <span class="text_hilight">Advanced Multimedia Technologies</span>, students apply design and communication skills to the industry standard and use printing technology.
+                    </p>
+                  </div>
+                  <div class="courseSection" data-courseType="technology">
+                    <h2>Telecommunications I and II</h2>
+                    <p>
+                        In <span class="text_hilight">Telecommunications</span>, students draft and produce incomprehensible TV news introductions.
+                    </p>
+                  </div>
+                  <div class="courseSection" data-courseType="engineering">
+                    <h2>Residential Construction</h2>
+                    <p>
+                        In <span class="text_hilight">Residential Constructions</span>, students like, build houses or something.
+                    </p>
+                  </div>
+                  <div class="courseSection" data-courseType="technology">
+                    <h2>Photographic Imaging</h2>
+                    <p>
+                        In <span class="text_hilight">Photographic Imaging</span>, Pennington teaches you how to make buff frogs and cang peen pins.
+                    </p>
+                  </div>
+                  <div class="courseSection" data-courseType="technology">
+                    <h2>Digital Communications</h2>
+                    <p>
+                        In <span class="text_hilight">Digital Communications</span>, students create promotional graphic designs.
+                    </p>
+                  </div>
+                  <div class="courseSection" data-courseType="art">
+                    <h2>Painting</h2>
+                    <p>
+                        In <span class="text_hilight">Painting</span>, students paint snowmen with red backgrounds and stars for buttons.
+                    </p>
+                  </div>
+                  <div class="courseSection" data-courseType="art">
+                    <h2>Weaving</h2>
+                    <p>
+                        In <span class="text_hilight">Weaving</span>, students sit along the Nile river making baskets out of reeds to carry mud to the local mosque.
+                    </p>
+                  </div>
+                  <div class="courseSection" data-courseType="art">
+                    <h2>Ceramics</h2>
+                    <p>
+                        In <span class="text_hilight">Ceramics</span>, students use the mud they collected to form pots which appear in 3D animation.
+                    </p>
+                  </div>
+                  <div class="courseSection" data-courseType="art">
+                    <h2>Animation</h2>
+                    <p>
+                        In <span class="text_hilight">Animations</span>, students make a live-action remake of the Lion King.
+                    </p>
+                  </div>
+                  <div class="courseSection" data-courseType="art">
+                    <h2>AP Studio Art</h2>
+                    <p>
+                        In <span class="text_hilight">AP Studio Art</span>, students are cool because they are AP level artists and can draw stick figures with hair.
+                    </p>
+                  </div>
+                  <div class="courseSection" data-courseType="business">
+                    <h2>Criminal/Civil Law</h2>
+                    <p>
+                        In <span class="text_hilight">Criminal/Civil Law</span>, students star in the hit TV show M.A.S.H and become supporting cast members in the new James Bond film.
+                    </p>
+                  </div>
+                  <div class="courseSection" data-courseType="business">
+                    <h2>Honors Accounting</h2>
+                    <p>
+                        In <span class="text_hilight">Honors Accounting</span>, students count numbers. It shall be counted 1...2...3..., not 3,2,1, nor to four nor to zero.
+                    </p>
+                  </div>
+                  <div class="courseSection" data-courseType="business">
+                    <h2>Concurrent Enrollment Web Design</h2>
+                    <p>
+                        In <span class="text_hilight">CE Web Design</span>, students work with Montco to make a website. Hey, kind of like this one!
+                    </p>
+                  </div>
+                  <div class="courseSection" data-courseType="business">
+                    <h2>AP Computer Science</h2>
+                    <p>
+                        In <span class="text_hilight">AP Computer Science</span>, Jimbo is out of sticks and out of carrots. He has time and time again proven to be...
+                    </p>
+                  </div>
+                  <div class="courseSection" data-courseType="business">
+                    <h2>App Development</h2>
+                    <p>
+                        In <span class="text_hilight">App Development</span>, flappy bird finally returns to the app store.
+                    </p>
+                  </div>
+                  <div class="courseSection" data-courseType="math">
+                    <h2>Algebra II</h2>
+                    <p>
+                        In <span class="text_hilight">Algebra II</span>, daddy Lubas shows you that when 2x+1=5 then x=2.
+                    </p>
+                  </div>
+                  <div class="courseSection" data-courseType="math">
+                    <h2>Pre-Calculus</h2>
+                    <p>
+                        In <span class="text_hilight">Pre-Calculus</span>, daddy Crouse shows you that sin^2x + cos^2x equals 1.
+                    </p>
+                  </div>
+                  <div class="courseSection" data-courseType="math">
+                    <h2>AP Statistics</h2>
+                    <p>
+                        In <span class="text_hilight">AP Stat</span>, mama Bowers shows you that normalcdf(10.5;14.4,11.8,1.28) = 0.824.
+                    </p>
+                  </div>
+                  <div class="courseSection" data-courseType="math">
+                    <h2>AP Calculus AB</h2>
+                    <p>
+                        In <span class="text_hilight">AP Calculus AB</span>, papa Turner shows you that when y = 3x^2 + 2 then y' = 6x.
+                    </p>
+                  </div>
+                  <div class="courseSection" data-courseType="math">
+                    <h2>AP Calculus BC</h2>
+                    <p>
+                        In <span class="text_hilight">AP Calculus BC</span>, papa Turner shows you that when y = secx then Y = ln|secx + tanx|.
+                    </p>
+                  </div>
                 </div>
             </div>
           </div>
@@ -84,14 +254,74 @@
               <hr>
             </div>
             <div class="row">
+                <div class="flex_container">
+                    <div class="teachercard"><p>Joshua Pennington</p><div class="row"><div class="col-8"><small>Mr. Pennington has been teaching for 12 years. He went to California University of Pennsylvania to get a bachelor's degree in Technology Education and a master’s degree in Classroom Technology. He teaches Photo Imaging, Digital Communications, Multimedia and Communication Research and Development. Mr. Pennington sees technology use in the classroom as a way to take things that we learn school and apply them into situations that we can use in the real world.</small></div><div class="col-4"><img src="../images/jpenny.jpg" alt class="boximg"></div></div></div>
+                    <div class="teachercard"><p>Chad Roth</p><div class="row"><div class="col-8"><small>Mr. Roth has been teaching for 17 years. He went to Millersville University for both his bachelor’s degree in Technology Education and master’s in Elementary Education. He teaches classes such as Tech and Engineering, Architecture Design and Robotics. Mr. Roth is interested in all things engineering (especially robotics) and he decided to teach these classes specifically because of the nice spin on engineering they provide. He uses technology in the classroom to help engage students, make the concepts that are taught relevant and to prepare students for jobs outside of high school that are reliant on technology.</small></div><div class="col-4"><img src="../images/jpenny.jpg" alt class="boximg"></div></div></div>
+                    <div class="teachercard"><p>Jason Valick</p><div class="row"><div class="col-8"><small>Mr. Valick has been teaching for 24 years. He went to Millersville University to get a bachelor’s degree in Technology Education and went to Ball State University to get his master’s degree. He teaches classes such as Tech Drawing and Design, Architecture Design, Engineering Design and Tech Research and Development. Mr. Valick decided to teach these courses because he enjoys the design aspects of engineering. Mr. Valick thinks if we aren’t coming up with new ways and technologies to help students we are going to go backwards as a society.</small></div><div class="col-4"><img src="../images/jpenny.jpg" alt class="boximg"></div></div></div>
+                    <div class="teachercard"><p>Kenneth Burton</p><div class="row"><div class="col-8"><small>Mr. Burton has been teaching for 24 years. He went to Millersville University for his undergraduate degree and Rochester Institute of Technology for graduate school. Holding a bachelor’s degree in Industrial Arts Education and a master’s in Woodworking and Furniture Design, Mr. Burton teaches classes such as Residential Construction, Engineering Materials and Material Technology because he likes sharing how to make things. As far as technology’s role in education, Mr. Burton is deeply concerned we are raising a generation of people that do not know how to do anything, and he is trying to combat that.</small></div><div class="col-4"><img src="../images/jpenny.jpg" alt class="boximg"></div></div></div>
+                    <div class="teachercard"><p>Andrew Schopf</p><div class="row"><div class="col-8"><small>Mr. Schopf has been teaching for 10 years and went to Millersville University to earn a bachelor’s degree in Technology Education and a master’s degree in Classroom Technology. He decided to teach tech ed because he enjoyed his Tech Ed classes and teachers in high school and wanted to be an engineer without sitting in a cubicle all day. The value of a technology education by Mr. Schopf is to see where we have been, what we are capable of and what is possible in the future.</small></div><div class="col-4"><img src="../images/jpenny.jpg" alt class="boximg"></div></div></div>
+                    <div class="teachercard"><p>Another One</p><div class="row"><div class="col-8"><small>We need another teacher here. We cannot have an odd number again, especially not in a justified flexbox.</small></div><div class="col-4"><img src="../images/jpenny.jpg" alt class="boximg"></div></div></div>
+                  </div>
+            </div>
+          </div>
+          <div class="row rowSection">
+            <div class="row">
+              <h1>Student Projects in STEAM Courses</h1><br>
+              <hr>
+            </div>
+            <div class="row">
+                <div class="flex_container">
+                  <div class="projectcard" id="deconstructionProject" onclick="loadProject(this);" data-imageURL="../images/project-deconstruction.jpg" data-projectTitle="deconstruction"><span style="background-image: url('../images/project-deconstruction.jpg');"></span><p>Tech Deconstruction</p></div>
+                  <div class="projectcard" onclick="loadProject(this);" data-imageURL="../images/project-coaster.jpg" data-projectTitle="coaster"><span style="background-image: url('../images/project-coaster.jpg');"></span><p>Roller Coaster</p></div>
+                  <div class="projectcard" onclick="loadProject(this);" data-imageURL="../images/project-math.png" data-projectTitle="math"><span style="background-image: url('../images/project-math.png');"></span><p>History of Math</p></div>
+                  <div class="projectcard" onclick="loadProject(this);" data-imageURL="../images/project-bridge.jpg" data-projectTitle="bridge"><span style="background-image: url('../images/project-bridge.jpg');"></span><p>Bridges</p></div>
+                  <div class="projectcard" onclick="loadProject(this);" data-imageURL="../images/project-printing.jpg" data-projectTitle="printing"><span style="background-image: url('../images/project-printing.jpg');"></span><p>Screen Printing</p></div>
+                  <div class="projectcard" onclick="loadProject(this);" data-imageURL="../images/project-magpie.jpg" data-projectTitle="magpie"><span style="background-image: url('../images/project-magpie.jpg');"></span><p>Magpie Lab</p></div>
+                </div>
+            </div>
+            <div class="row">
                 <div class="col-sm-6">
-                  
+                  <div class="imgbox">
+                    <img src="../images/project-deconstruction.jpg" id="projectImage" alt class="boximg">
+                  </div>
                 </div>
                 <div class="col-sm-6 bodysection">
-                    <h2>Honors Java</h2>
+                  <div class="projectSection" data-projectTitle="deconstruction">
+                    <h2>Tech Deconstruction</h2>
                     <p>
-                        In <span class="text_hilight">Honors Java</span>, tenth through twelvth grade students learn fundamental programming techniques and get to chill with the strangest dang teacher on the whole dang diddly darn planet. The one and only Jimbo hiryak disperses his java knowledge with an iron fist, and that is why we are out of carrots.
+                      In this project from X course, students deconstruct technology to understand its component parts.
                     </p>
+                  </div>
+                  <div class="projectSection" data-projectTitle="coaster">
+                    <h2>Roller Coaster</h2>
+                    <p>
+                      In this project from AP Physics 1, students build a roller coaster out of paper and try to keep him rollin rollin rolllin. Joel set the record for longest coaster btw.
+                    </p>
+                  </div>
+                  <div class="projectSection" data-projectTitle="math">
+                    <h2>History of Math</h2>
+                    <p>
+                      In this project from X course, students write a history of a math concept and present it.
+                    </p>
+                  </div>
+                  <div class="projectSection" data-projectTitle="bridge">
+                    <h2>Bridges</h2>
+                    <p>
+                      In this project from X course, students build a bridge out of paint stirs and papa Roth drives his tractor over it.
+                    </p>
+                  </div>
+                  <div class="projectSection" data-projectTitle="printing">
+                    <h2>Screen Printing</h2>
+                    <p>
+                      In this project from X course, Pennington has students make buff frog shirts using screen printing.
+                    </p>
+                  </div>
+                  <div class="projectSection" data-projectTitle="magpie">
+                    <h2>Magpie Lab</h2>
+                    <p>
+                      In this project from AP Computer Science, students make an AI chatbot named magpie. It's pretty d a n g  stupid.
+                    </p>
+                  </div>
                 </div>
             </div>
           </div>
@@ -101,6 +331,9 @@
         <script>
             var scroll = new SmoothScroll('a[href*="#"]');
         </script>
+        <script src="../js/scripts.js" type="text/javascript"></script>
+        <script> loadCourses(document.getElementById("scienceCourseCard")); </script>
+        <script> loadProject(document.getElementById("deconstructionProject")); </script>
 
     <footer>
         <div class="notwide">
