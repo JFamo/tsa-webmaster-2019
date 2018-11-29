@@ -416,9 +416,7 @@ a:hover {
   background-color:#3e92cc;
 }
 .text_hilight{
-  border: 0.15em solid #3e92cc;
-  color:#FBFBFB;
-  background-color:#3e92cc;
+  color:#3e92cc;
 }
 .whitesection h1{
   color:white;
