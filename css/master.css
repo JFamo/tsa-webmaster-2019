@@ -64,7 +64,6 @@ body {
 section {
   max-width:1200px;
   padding-top: 3rem;
-  padding-bottom: 3rem;
   margin:0 auto;
   min-height:80%;
 }
@@ -92,13 +91,13 @@ hr {
   border: 0;
   background-color: #0A2463;
   height: 3px;
-  margin: 1 1rem 1rem;
   width:100%;
 }
 @media only screen and (max-width: 575px) {
   hr {
-    background-color: #d62828;
-    margin: -1rem 0 1rem 0;
+  }
+  h1{
+    margin-left:1rem;
   }
 }
 p,
@@ -123,7 +122,7 @@ a:hover {
   color: #d62828;
 }
 .notwide {
-  max-width: 1200px;
+  max-width: 100%;
 }
 .magic {
   display: block;
@@ -289,6 +288,68 @@ a:hover {
 .coursecard:hover{
   transform: translate(0,-2px);
   box-shadow: 2px 3px 6px rgba(0, 0, 0, 0.16), 2px 3px 6px rgba(0, 0, 0, 0.23);
+}
+.teachercard {
+  margin: 1rem;
+  box-shadow: 0 3px 6px rgba(0, 0, 0, 0.16), 0 3px 6px rgba(0, 0, 0, 0.23);
+  width:400px;
+  height:200px;
+  border-radius:0.1rem;
+  border-left: 2px solid #0a2463;
+  transition: all 0.2s;
+  overflow-x:hidden;
+}
+.teachercard p{
+  padding: 0.75rem 1rem 0rem 1rem;
+  margin-bottom:0rem;
+  color: #0a2463;
+  font-family: 'Poppins', sans-serif;
+  font-weight: 700;
+}
+.teachercard small{
+  padding: 0rem 0rem 0rem 1rem;
+  color: black;
+  font-size: 0.6rem;
+  line-height: 1rem;
+  overflow:wrap;
+  display:block;
+}
+.teachercard img{
+  padding: 1rem 1rem 1rem 1rem;
+}
+.teachercard:hover{
+  transform: translate(0,-2px);
+  box-shadow: 2px 3px 6px rgba(0, 0, 0, 0.16), 2px 3px 6px rgba(0, 0, 0, 0.23);
+}
+.projectcard{
+  text-align:center;
+  width:250px;
+  height:150px;
+}
+.projectcard p{
+  padding: 0.75rem 1rem 0rem 1rem;
+  margin-bottom:0rem;
+  color: #0a2463;
+  font-family: 'Poppins', sans-serif;
+  font-weight: 700;
+}
+.projectcard span{
+  border-radius: 50%;
+  width:80px;
+  height:80px;
+  display:inline-block;
+  transition: all 0.2s ease-in-out;
+  opacity:0.6;
+  background-size:cover;
+  cursor:pointer;
+}
+.projectcard span:hover{
+  box-shadow: 2px 3px 6px rgba(0, 0, 0, 0.16), 2px 3px 6px rgba(0, 0, 0, 0.23);
+  opacity:1;
+}
+.projectcard span:active{
+  box-shadow: 2px 3px 6px rgba(0, 0, 0, 0.16), 2px 3px 6px rgba(0, 0, 0, 0.23);
+  background-color: #d62828;
 }
 .box {
   border: 1px solid #1e1e1e;
@@ -468,4 +529,8 @@ footer {
   .row {
     max-width:100% !important;
   }
+}
+
+.activityRow{
+  padding-bottom:3rem;
 }
