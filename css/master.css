@@ -272,6 +272,7 @@ a:hover {
   border-left: 2px solid #0a2463;
   transition: all 0.2s;
   overflow-x:hidden;
+  cursor: pointer;
 }
 .coursecard p{
   padding: 0.75rem 1rem 0rem 1rem;
@@ -293,7 +294,7 @@ a:hover {
   margin: 1rem;
   box-shadow: 0 3px 6px rgba(0, 0, 0, 0.16), 0 3px 6px rgba(0, 0, 0, 0.23);
   width:400px;
-  height:200px;
+  height:250px;
   border-radius:0.1rem;
   border-left: 2px solid #0a2463;
   transition: all 0.2s;
@@ -309,8 +310,7 @@ a:hover {
 .teachercard small{
   padding: 0rem 0rem 0rem 1rem;
   color: black;
-  font-size: 0.6rem;
-  line-height: 1rem;
+  font-size: 1rem;
   overflow:wrap;
   display:block;
 }
@@ -321,10 +321,13 @@ a:hover {
   transform: translate(0,-2px);
   box-shadow: 2px 3px 6px rgba(0, 0, 0, 0.16), 2px 3px 6px rgba(0, 0, 0, 0.23);
 }
+.teachercard div{
+	padding: 0;	
+}
 .projectcard{
   text-align:center;
   width:250px;
-  height:150px;
+  height:180px;
 }
 .projectcard p{
   padding: 0.75rem 1rem 0rem 1rem;
@@ -335,8 +338,8 @@ a:hover {
 }
 .projectcard span{
   border-radius: 50%;
-  width:80px;
-  height:80px;
+  width:120px;
+  height:120px;
   display:inline-block;
   transition: all 0.2s ease-in-out;
   opacity:0.6;
@@ -535,4 +538,6 @@ footer {
 
 .constantSize{
   object-fit: cover;
+  width:550px;
+  height:350px;
 }
