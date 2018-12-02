@@ -10,6 +10,8 @@
         <script src="https://code.jquery.com/jquery-3.2.1.slim.min.js" integrity="sha384-KJ3o2DKtIkvYIK3UENzmM7KCkRr/rE9/Qpg6aAZGJwFDMVNA/GpGFF93hXpG5KkN" crossorigin="anonymous"></script>
 		<script src="https://cdnjs.cloudflare.com/ajax/libs/popper.js/1.12.9/umd/popper.min.js" integrity="sha384-ApNbgh9B+Y1QKtv3Rn7W3mgPxhU9K/ScQsAP7hUibX39j7fakFPskvXusvfa0b4Q" crossorigin="anonymous"></script>
         <script src="https://maxcdn.bootstrapcdn.com/bootstrap/4.0.0/js/bootstrap.min.js" integrity="sha384-JZR6Spejh4U02d8jOt6vLEHfe/JQGiRRSQQxSfFWpi1MquVdAyjUar5+76PVCmYl" crossorigin="anonymous"></script>
+        <script type="text/javascript" src="./js/fullpage.js"></script>
+        <link rel="stylesheet" href="./css/fullpage.css">
         <link rel="stylesheet" href="./css/master.css">
         <!-- For Mobile Users -->
         <meta name="viewport" content="width=device-width, initial-scale=1">
@@ -52,7 +54,9 @@
             </ul>
           </div>
         </nav>
-        <section>
+        <div id="fullpage">
+        <section class="section">
+          <a class="magic" id="home"></a>
             <div class="row tall">
                 <div class="col-sm-6 tall">
                   <img src="./images/placeholder.jpg" alt class="titletextart">
@@ -63,7 +67,8 @@
             </div>
         </section>
         <hr class="sectionsplitter">
-        <section>
+        <section class="section">
+          <a class="magic" id="events"></a>
             <div class="row tall">
                 <div class="col-sm-6 tall">
                   <img src="./images/placeholder.jpg" alt class="boximg">
@@ -81,7 +86,8 @@
             </div>
         </section> 
         <hr class="sectionsplitter">
-        <section>
+        <section class="section">
+          <a class="magic" id="music"></a>
             <div class="row tall">
                 <div class="col-sm-6 tall">
                   <img src="./images/placeholder.jpg" alt class="boximg">
@@ -97,10 +103,20 @@
                     </audio>
                 </div>
             </div>
-        </section>    
-        <script src="https://cdn.jsdelivr.net/gh/cferdinandi/smooth-scroll@14.0.0/dist/smooth-scroll.polyfills.min.js"></script>
+        </section> 
+        </div>  
         <script>
-            var scroll = new SmoothScroll('a[href*="#"]');
+          var scroll = new SmoothScroll('a[href*="#"]');
+        </script>
+        <script>
+          new fullpage('#fullpage', {
+              //options here
+              autoScrolling:true,
+              scrollHorizontally: true,
+              licenseKey: 'OPEN-SOURCE-GPLV3-LICENSE'
+          });
+           //methods
+          fullpage_api.setAllowScrolling(true);
         </script>
     </body>
 </html>
