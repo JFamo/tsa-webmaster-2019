@@ -71,7 +71,7 @@
           <a class="magic" id="events"></a>
             <div class="row tall">
                 <div class="col-sm-6 tall">
-                  <img src="./images/placeholder.jpg" alt class="boximg">
+                  <img data-src="./images/placeholder.jpg" alt class="boximg">
                 </div>
                 <div class="col-sm-6 tall bodysection">
                     <h1>Tour/Event Info</h1>
@@ -83,14 +83,14 @@
           <a class="magic" id="music"></a>
             <div class="row tall">
                 <div class="col-sm-6 tall">
-                  <img src="./images/placeholder.jpg" alt class="boximg">
+                  <img data-src="./images/placeholder.jpg" alt class="boximg">
                 </div>
                 <div class="col-sm-6 tall bodysection">
                     <h1>New Release</h1>
                     <h2>Song Title</h2>
                     <audio
                       controls
-                      src="" style="color: black;">
+                      data-src="" style="color: black;">
                           Your browser does not support the
                           <code>audio</code> element.
                     </audio>
@@ -131,9 +131,21 @@
         </script>
         <script>
           new fullpage('#fullpage', {
+            //Navigation
+            menu: '#menu',
+            lockAnchors: false,
+            anchors:['firstPage', 'secondPage'],
+            navigation: false,
+            navigationPosition: 'right',
+            navigationTooltips: ['firstSlide', 'secondSlide'],
+            showActiveTooltip: false,
+            slidesNavigation: false,
+            slidesNavPosition: 'bottom',
+              responsiveWidth:1100,
+              afterResponsive: function(isResponsive){
+
+              },
               //options here
-              autoScrolling:true,
-              scrollHorizontally: true,
               licenseKey: 'OPEN-SOURCE-GPLV3-LICENSE'
           });
            //methods
