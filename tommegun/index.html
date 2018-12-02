@@ -55,8 +55,7 @@
           </div>
         </nav>
         <div id="fullpage">
-        <section class="section">
-          <a class="magic" id="home"></a>
+        <section class="section" data-anchor="home">
             <div class="row tall">
                 <div class="col-sm-6 tall">
                   <img src="./images/placeholder.jpg" alt class="titletextart">
@@ -67,8 +66,7 @@
             </div>
         </section>
         <hr class="sectionsplitter">
-        <section class="section">
-          <a class="magic" id="events"></a>
+        <section class="section" data-anchor="events">
             <div class="row tall">
                 <div class="col-sm-6 tall">
                   <img data-src="./images/placeholder.jpg" alt class="boximg">
@@ -79,8 +77,7 @@
             </div>
         </section> 
         <hr class="sectionsplitter">
-        <section class="section">
-          <a class="magic" id="music"></a>
+        <section class="section" data-anchor="music">
             <div class="row tall">
                 <div class="col-sm-6 tall">
                   <img data-src="./images/placeholder.jpg" alt class="boximg">
@@ -98,8 +95,7 @@
             </div>
         </section> 
         <hr class="sectionsplitter">
-        <section class="section">
-          <a class="magic" id="merch"></a>
+        <section class="section" data-anchor="merch">
             <div class="row tall">
                 <h1>Merchandise</h1>
             </div>
@@ -131,16 +127,11 @@
         </script>
         <script>
           new fullpage('#fullpage', {
-            //Navigation
-            menu: '#menu',
-            lockAnchors: false,
-            anchors:['firstPage', 'secondPage'],
-            navigation: false,
-            navigationPosition: 'right',
-            navigationTooltips: ['firstSlide', 'secondSlide'],
-            showActiveTooltip: false,
-            slidesNavigation: false,
-            slidesNavPosition: 'bottom',
+              //Navigation
+              anchors: ['home','events','music','merch'],
+              navigation:true,
+              navigationPosition: 'right',
+              navigationTooltops: ['Home','Events','Music','Shop'],
               responsiveWidth:1100,
               afterResponsive: function(isResponsive){
 
