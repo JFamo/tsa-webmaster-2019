@@ -80,7 +80,7 @@ section {
 }
 h1,
 h2 {
-  font-family: 'Bangers', cursive;
+  font-family: 'Cardo', serif;
   font-weight: 700;
   letter-spacing: 0.5px;
   word-wrap: break-word;
@@ -186,8 +186,8 @@ a:hover {
   height:8rem;
 }
 .header p{
-  font-family: 'Bangers', sans-serif;
-  font-weight: 500;
+  font-family: 'Cardo', serif;
+  font-weight: 700;
   letter-spacing: 0.5px;
   word-wrap: break-word;
   font-size:3rem;
@@ -195,7 +195,7 @@ a:hover {
   color:#CC0000;
 }
 .header small{
-  font-family: 'PT Sans', sans-serif;
+  font-family: 'Cardo', serif;
   font-weight: 400;
   letter-spacing: 0.5px;
   word-wrap: break-word;
@@ -205,7 +205,7 @@ a:hover {
   color:white;
 }
 .header a{
-  font-family: 'Bangers', cursive;
+  font-family: 'Cardo', serif;
 }
 .header .notwide {
   justify-content: center;
@@ -251,7 +251,7 @@ a:hover {
   box-shadow: 0 3px 6px rgba(0, 0, 0, 0.16), 0 3px 6px rgba(0, 0, 0, 0.23);
 }
 .brand {
-  font-family: 'Bangers', cursive;
+  font-family: 'PT Sans', sans-serif;
   font-weight: 700;
   font-size: 2rem;
   text-align: center;
