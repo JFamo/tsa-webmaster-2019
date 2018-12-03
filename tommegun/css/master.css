@@ -491,6 +491,10 @@ footer {
   margin-right:0 !important;
 }
 
+.titlerow{
+  display: flex; justify-content: center;
+}
+
 .rowSection{
   padding-bottom:4rem;
 }
