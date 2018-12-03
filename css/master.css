@@ -541,3 +541,12 @@ footer {
   width:550px;
   height:350px;
 }
+
+.projectSection{
+  background-color:white;
+  border-radius: 5px;
+  padding: 0.5rem 0.5rem 0.5rem 0.5rem;
+}
+.projectSection p{
+  margin-bottom:0;
+}
