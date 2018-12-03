@@ -1,46 +1,18 @@
 /*
-Styling for TSA Webmaster style-guide.
-@author Ethan Witherington etw9578@rit.edu
+Styling for TSA Webmaster 2018-19 Tommegun Site
 @author Joshua Famous joshua.famous@gmail.com
 */
-.dark {
-  background-color: #1e1e1e;
-}
-.darkgray {
-  background-color: #43494D;
-}
-.gray {
-  background-color: #E9EBED;
-}
-.lightgray {
-  background-color: #F5F5F5;
-}
-.light {
-  background-color: #FBFBFB;
-}
-.base {
+.black {
   background-color: #000000;
+}
+.white {
+  background-color: #FFFFFF;
 }
 .accent {
   background-color: #CC0000;
 }
 .hilight {
   background-color: #FFD000;
-}
-.shadow_1 {
-  box-shadow: 0 1px 3px rgba(0, 0, 0, 0.12), 0 1px 2px rgba(0, 0, 0, 0.24);
-}
-.shadow_2 {
-  box-shadow: 0 3px 6px rgba(0, 0, 0, 0.16), 0 3px 6px rgba(0, 0, 0, 0.23);
-}
-.shadow_3 {
-  box-shadow: 0 10px 20px rgba(0, 0, 0, 0.19), 0 6px 6px rgba(0, 0, 0, 0.23);
-}
-.shadow_4 {
-  box-shadow: 0 14px 28px rgba(0, 0, 0, 0.25), 0 10px 10px rgba(0, 0, 0, 0.22);
-}
-.aesthetic {
-  letter-spacing: 0.5px;
 }
 html{
   font-size:14px;  /* This literally defines the font size of the entire doc - important ! */ 
@@ -131,9 +103,6 @@ hr {
   height: 3px;
   width:100%;
 }
-.hugeText{
-  font-size:5rem;
-}
 @media only screen and (max-width: 575px) {
   hr {
   }
@@ -161,12 +130,6 @@ a {
 }
 a:hover {
   color: #CC0000;
-}
-.notwide {
-  max-width: 100%;
-}
-.magic {
-  display: block;
 }
 .flex_container {
   display: flex;
@@ -204,12 +167,6 @@ a:hover {
   .flex_right p {
     max-width:50%;
   }
-}
-.code {
-  background-color: #E9EBED;
-  color: #1e1e1e;
-  padding: 0.25rem 0.5rem;
-  font-family: monospace;
 }
 .header {
   background-color: #000000;
@@ -262,26 +219,6 @@ a:hover {
   color: #FBFBFB;
   text-align: center;
 }
-.navigation {
-  background-color: white;
-  margin: 0 -2rem;
-}
-.navigation .notwide a {
-  display: inline-block;
-  text-decoration: none;
-  color: #FBFBFB;
-  margin: 1rem;
-  letter-spacing: 0.5px;
-}
-.navigation .notwide a:hover {
-  text-decoration: underline;
-  color: #CC0000;
-}
-#logos img {
-  margin: 1rem;
-  padding: 2rem;
-  box-shadow: 0 3px 6px rgba(0, 0, 0, 0.16), 0 3px 6px rgba(0, 0, 0, 0.23);
-}
 .brand {
   font-family: 'PT Sans', sans-serif;
   font-weight: 700;
@@ -294,19 +231,6 @@ a:hover {
   color: #FBFBFB;
   box-shadow: 0 3px 6px rgba(0, 0, 0, 0.16), 0 3px 6px rgba(0, 0, 0, 0.23);
   letter-spacing: 0.5px;
-}
-.swatch {
-  border: 1px solid #1e1e1e;
-  margin: 1rem;
-  background-color: #FBFBFB;
-  box-shadow: 0 3px 6px rgba(0, 0, 0, 0.16), 0 3px 6px rgba(0, 0, 0, 0.23);
-}
-.swatch .color {
-  height: 3.75rem;
-}
-.swatch p {
-  margin: 1rem;
-  padding: 0;
 }
 .box {
   border: 1px solid #1e1e1e;
@@ -348,69 +272,6 @@ a:hover {
   color: #000000;
   background-color:#FFFFFF;
   cursor:pointer;
-}
-.b_accent {
-  border: 0.15em solid #CC0000;
-  background-color: #FBFBFB;
-  color: #CC0000;
-}
-.b_accent:hover {
-  background-color: #CC0000;
-  color: #FBFBFB;
-}
-.b_base {
-  border: 0.15em solid #000000;
-  background-color: #FBFBFB;
-  color: #000000;
-}
-.b_base:hover {
-  background-color: #000000;
-  color: #FBFBFB;
-}
-.b_dark {
-  border: 0.15em solid #1e1e1e;
-  background-color: #FBFBFB;
-  color: #1e1e1e;
-}
-.b_dark:hover {
-  background-color: #1e1e1e;
-  color: #FBFBFB;
-}
-.b_hilight{
-  border: 0.15em solid #FFD000;
-  background-color:#FBFBFB;
-  color:#FFD000;
-}
-.b_hilight:hover{
-  color:#FBFBFB;
-  background-color:#FFD000;
-}
-.text_hilight{
-  color:#FFD000;
-}
-.whitesection h1{
-  color:white;
-}
-.whitesection h2{
-  color:white;
-}
-.whitesection p{
-  color:white;
-}
-.whitesection li{
-  color:white;
-}
-.whitesection a{
-  color:white;
-}
-.whitesection hr{
-  background-color:white;
-}
-footer {
-  margin: 0;
-  background-color: #000000;
-  color: white;
-  padding: 1rem;
 }
 
 .nopadding{
