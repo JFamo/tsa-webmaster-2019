@@ -81,7 +81,7 @@ section {
 h1,
 h2 {
   font-family: 'Cardo', serif;
-  font-weight: 700;
+  font-weight: 500;
   letter-spacing: 0.5px;
   word-wrap: break-word;
 }
@@ -92,6 +92,35 @@ h1 {
 h2 {
   font-size: 2rem;
   color:#FFD000;
+}
+.brandheader{
+  font-family: 'Cardo', serif;
+  font-weight: 500;
+  letter-spacing: 0.5px;
+  word-wrap: break-word;
+  font-size:3rem;
+  margin:0;
+}
+.headerbutton{
+  font-family: 'Cardo', serif;
+  font-weight: 500;
+  font-size: 1.5rem;
+  color: #CC0000;
+  border:2px solid #cc0000;
+  background-color:#000000;
+  margin-bottom:1rem;
+}
+.headerbutton:hover{
+  color: #CC0000;
+  border:2px solid #cc0000;
+  background-color:#000000;
+  cursor:default;
+}
+.spacedBody{
+  padding-top:1rem;
+}
+.spacedBody button{
+  margin-top:2rem;
 }
 hr {
   border: 0;
@@ -300,15 +329,23 @@ a:hover {
   padding:0.5rem;
   margin:0.5rem;
 }
-.button {
-  margin: 1rem;
-  padding: 1rem 2rem;
-  display: inline-block;
+button {
   font-family: 'PT Sans', sans-serif;
-  font-weight: 700;
-  text-decoration: none;
-  transition: color 0.25s ease, background-color 0.25s ease;
+  font-weight: 500;
   letter-spacing: 0.5px;
+  word-wrap: break-word;
+  color: #FFFFFF;
+  border:2px solid #FFFFFF;
+  background-color:#000000;
+  padding-left:1rem;
+  padding-right:1rem;
+  transition: 0.8s all;
+}
+button:hover{
+  color: #000000;
+  border:2px solid #000000;
+  background-color:#FFFFFF;
+  cursor:pointer;
 }
 .b_accent {
   border: 0.15em solid #CC0000;
@@ -429,7 +466,7 @@ footer {
 }
 
 .bodysection{
-  padding-top:12.5%;
+  padding-top:10%;
 }
 
 .bodysection p{
