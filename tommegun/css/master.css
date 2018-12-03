@@ -77,7 +77,7 @@ h2 {
   font-family: 'Cardo', serif;
   font-weight: 500;
   font-size: 1.5rem;
-  color: #CC0000;
+  color: #FFFFFF;
   border-bottom:2px solid #cc0000;
   border-left:2px solid #000000;
   border-right:2px solid #000000;
@@ -93,6 +93,7 @@ h2 {
 }
 .spacedBody{
   padding-top:1rem;
+  padding-bottom:5rem;
 }
 .spacedBody button{
   margin-top:2rem;
@@ -124,12 +125,6 @@ ul {
   .header small{
     padding-left: 14px;
   }
-}
-a {
-  color: #FFFFFF;
-}
-a:hover {
-  color: #CC0000;
 }
 .flex_container {
   display: flex;
@@ -173,6 +168,7 @@ a:hover {
   padding: 1rem 3rem 1rem 3rem;
   box-shadow: 0 2px 4px 0 rgba(0, 0, 0, 0.2), 0 3px 10px 0 rgba(0, 0, 0, 0.19);
   height:8rem;
+  border-bottom:2px solid #FFD000;
 }
 .header p{
   font-family: 'Cardo', serif;
@@ -181,7 +177,7 @@ a:hover {
   word-wrap: break-word;
   font-size:3rem;
   margin:0;
-  color:#CC0000;
+  color:#FFD000;
 }
 .header small{
   font-family: 'Cardo', serif;
@@ -390,5 +386,19 @@ a:hover {
 }
 
 .eventsTable{
-  width:55%;
+  width:100%;
+  color:white;
+}
+
+.eventsTable tr{
+  height:6rem;
+}
+
+a{
+  color:#cc0000;
+  transition:0.2s all ease-in-out;
+}
+
+a:hover{
+  color:#FFD000;
 }
