@@ -388,3 +388,7 @@ a:hover {
 #fp-nav span{
   background-color: #FFD000 !important;
 }
+
+.eventsTable{
+  width:55%;
+}
