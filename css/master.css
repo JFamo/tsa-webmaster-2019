@@ -134,6 +134,13 @@ a:hover {
   justify-content: space-evenly;
   flex-wrap: wrap;
 }
+.centerFlex{
+	width:100%;	
+}
+.centerFlex div{
+	flex-basis: 45%;
+	flex-grow: 1;
+}
 .flex_left{
   justify-content: flex-start !important;
 }
@@ -353,6 +360,15 @@ a:hover {
 .projectcard span:active{
   box-shadow: 2px 3px 6px rgba(0, 0, 0, 0.16), 2px 3px 6px rgba(0, 0, 0, 0.23);
   background-color: #d62828;
+}
+.mottocard {
+  margin: 1rem;
+  box-shadow: 0 3px 6px rgba(0, 0, 0, 0.16), 0 3px 6px rgba(0, 0, 0, 0.23);
+  border-radius:0.1rem;
+  border-left: 2px solid #0a2463;
+  transition: all 0.2s;
+  overflow-x:hidden;
+  padding: 1.5rem 1.5rem 1.5rem 1.5rem;
 }
 .box {
   border: 1px solid #1e1e1e;
