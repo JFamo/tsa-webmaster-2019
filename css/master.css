@@ -331,6 +331,43 @@ a:hover {
 .teachercard div{
 	padding: 0;	
 }
+
+.awardcard {
+  margin: 1rem;
+  box-shadow: 0 3px 6px rgba(0, 0, 0, 0.16), 0 3px 6px rgba(0, 0, 0, 0.23);
+  width:350px;
+  height:200px;
+  border-radius:0.1rem;
+  border-left: 2px solid #0a2463;
+  transition: all 0.2s;
+  overflow-x:hidden;
+}
+.awardcard p{
+  padding: 0.75rem 1rem 0rem 1rem;
+  margin-bottom:0rem;
+  color: #0a2463;
+  font-size:1.5rem;
+  font-family: 'Poppins', sans-serif;
+  font-weight: 700;
+}
+.awardcard small{
+  padding: 0rem 0rem 0rem 1rem;
+  color: black;
+  font-size: 1.2rem;
+  overflow:wrap;
+  display:block;
+}
+.awardcard img{
+  padding: 1rem 1rem 1rem 1rem;
+}
+.awardcard:hover{
+  transform: translate(0,-2px);
+  box-shadow: 2px 3px 6px rgba(0, 0, 0, 0.16), 2px 3px 6px rgba(0, 0, 0, 0.23);
+}
+.awardcard div{
+  padding: 0; 
+}
+
 .projectcard{
   text-align:center;
   width:250px;
