@@ -67,6 +67,9 @@ section {
   margin:0 auto;
   min-height:80%;
 }
+.fullsection{
+  max-width:100% !important;
+}
 @media only screen and (max-width: 575px) {
   section {
     padding-top: 0.5rem;
