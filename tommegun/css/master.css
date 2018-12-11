@@ -245,9 +245,6 @@ ul {
   display:block;
   padding-top:25%;
 }
-.tall{
-  min-height: calc(100vh - 8rem);
-}
 .half{
   padding:0.5rem;
   margin:0.5rem;
