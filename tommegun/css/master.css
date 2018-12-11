@@ -14,6 +14,10 @@ Styling for TSA Webmaster 2018-19 Tommegun Site
 .bg-hilight {
   background-color: #FFD000;
 }
+.bg-dark-hilight {
+  background-color: #E0B700	
+}
+
 .accent {
   color: #CC0000;
 }
@@ -46,6 +50,10 @@ section {
   max-width:1200px;
   margin:0 auto;
   padding-bottom:10rem;
+}
+.widesection {
+  min-width:100% !important;
+  margin:0 0 0 0;
 }
 .sectionsplitter{
   margin:0;
