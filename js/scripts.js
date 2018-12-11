@@ -28,3 +28,19 @@ function loadProject(element){
 	}
 	document.getElementById("projectImage").src = element.getAttribute('data-imageURL');
 }
+
+function loadOfficer(element){
+	var officer = element.getAttribute('data-officer');
+	var officers = document.getElementsByClassName("projectSection");
+	for(var i = 0; i < officers.length; i++)
+	{
+		var thisOfficer = officers[i];
+	  	if(thisOfficer.getAttribute('data-officer') == officer){
+	  		thisOfficer.style.display = "block";
+	   	}
+	   	else{
+	   		thisOfficer.style.display = "none";
+	   	}
+	}
+	document.getElementById("officerImage").src = element.getAttribute('data-imageURL');
+}
