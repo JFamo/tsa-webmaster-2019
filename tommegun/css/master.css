@@ -8,11 +8,17 @@ Styling for TSA Webmaster 2018-19 Tommegun Site
 .white {
   background-color: #FFFFFF;
 }
-.accent {
+.bg-accent {
   background-color: #CC0000;
 }
-.hilight {
+.bg-hilight {
   background-color: #FFD000;
+}
+.accent {
+  color: #CC0000;
+}
+.hilight {
+  color: #FFD000;
 }
 html{
   font-size:14px;  /* This literally defines the font size of the entire doc - important ! */ 
@@ -39,7 +45,7 @@ body {
 section {
   max-width:1200px;
   margin:0 auto;
-  min-height: calc(100vh - 8rem);
+  padding-bottom:10rem;
 }
 .sectionsplitter{
   margin:0;
@@ -245,6 +251,9 @@ ul {
   display:block;
   padding-top:25%;
 }
+.tall{
+  min-height: calc(100vh - 8rem);
+}
 .half{
   padding:0.5rem;
   margin:0.5rem;
@@ -346,6 +355,8 @@ ul {
 
 .titlerow{
   display: flex; justify-content: center;
+  padding-top:2rem;
+  padding-bottom:2rem;
 }
 
 .rowSection{
@@ -398,4 +409,36 @@ a{
 
 a:hover{
   color:#FFD000;
+}
+
+footer{
+  font-family: 'Cardo', serif;
+  font-size:1.5rem;
+  color:white;
+  padding: 5rem 25% 5rem 25%;
+  border-top:2px solid #FFD000;
+  border-left:2px solid #000000;
+  border-right:2px solid #000000;
+  border-bottom:2px solid #000000;
+  background-color:#000000;
+}
+
+.fa{
+  font-size:4rem;
+}
+
+.fa:hover{
+  text-decoration: none !important;
+}
+
+.tommeform input{
+  background-color: black;
+  border: 1px solid #FFD000;
+  color:white;
+  padding:1rem 1rem 1rem 1rem;
+}
+
+.disclaimer{
+  font-size:1rem;
+  color:#aaaaaa;
 }
