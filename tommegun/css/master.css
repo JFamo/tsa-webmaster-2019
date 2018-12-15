@@ -146,6 +146,7 @@ ul {
   align-items: center;
   justify-content: space-evenly;
   flex-wrap: wrap;
+  width:100%;
 }
 .flex_left{
   justify-content: flex-start !important;
@@ -449,4 +450,21 @@ footer{
 .disclaimer{
   font-size:1rem;
   color:#aaaaaa;
+}
+
+.merchcard{
+  border: 2px solid white;
+  margin-left:1rem;
+  margin-right:1rem;
+}
+
+@media only screen and (max-width: 575px) {
+  .merchcard{
+    border: 2px solid white;
+    margin-top:1rem;
+    margin-bottom:1rem;
+  }
+  .merchcard img{
+    display:none;
+  }
 }
