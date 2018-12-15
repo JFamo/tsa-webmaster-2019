@@ -14,6 +14,10 @@ Styling for TSA Webmaster 2018-19 Tommegun Site
 .bg-hilight {
   background-color: #FFD000;
 }
+.bg-gray {
+  background-color: #272727
+}
+
 .accent {
   color: #CC0000;
 }
@@ -43,9 +47,13 @@ body {
   height:100vh;
 }
 section {
-  max-width:1200px;
-  margin:0 auto;
+  width:100%;
   padding-bottom:10rem;
+  padding-left:10%;
+  padding-right:10%;
+}
+.widesection {
+	width: none;
 }
 .sectionsplitter{
   margin:0;
@@ -84,17 +92,17 @@ h2 {
   font-weight: 500;
   font-size: 1.5rem;
   color: #FFFFFF;
-  border-bottom:2px solid #cc0000;
-  border-left:2px solid #000000;
-  border-right:2px solid #000000;
-  border-top:2px solid #000000;
-  background-color:#000000;
+  border-bottom: 2px solid #FFFFFF;
+  border-left: none;
+  border-right: none;
+  border-top: none;
+  background-color: rgba(0,0,0,0.00);
   white-space:nowrap;
 }
 .headerbutton:hover{
   color: #CC0000;
   border-bottom:2px solid #cc0000;
-  background-color:#000000;
+  background-color:rgba(0,0,0,0.00);
   cursor:default;
 }
 .spacedBody{
@@ -138,6 +146,7 @@ ul {
   align-items: center;
   justify-content: space-evenly;
   flex-wrap: wrap;
+  width:100%;
 }
 .flex_left{
   justify-content: flex-start !important;
@@ -386,7 +395,7 @@ ul {
 
 .titletextart{
   width:100%;
-  padding-top:20%;
+  padding-top: 30%
 }
 
 #fp-nav span{
@@ -441,4 +450,21 @@ footer{
 .disclaimer{
   font-size:1rem;
   color:#aaaaaa;
+}
+
+.merchcard{
+  border: 2px solid white;
+  margin-left:1rem;
+  margin-right:1rem;
+}
+
+@media only screen and (max-width: 575px) {
+  .merchcard{
+    border: 2px solid white;
+    margin-top:1rem;
+    margin-bottom:1rem;
+  }
+  .merchcard img{
+    display:none;
+  }
 }
