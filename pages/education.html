@@ -272,14 +272,14 @@
             <div class="row">
                 <div class="flex_container">
                   <div class="projectcard" id="deconstructionProject" onclick="loadProject(this);" data-imageURL="../images/project-deconstruction.jpg" data-projectTitle="deconstruction"><span style="background-image: url('../images/project-deconstruction.jpg');"></span><p>Tech Deconstruction</p></div>
-                  <div class="projectcard" onclick="loadProject(this);" data-imageURL="../images/project-coaster.jpg" data-projectTitle="coaster"><span style="background-image: url('../images/project-coaster.jpg');"></span><p>Roller Coaster</p></div>
-                  <div class="projectcard" onclick="loadProject(this);" data-imageURL="../images/project-math.png" data-projectTitle="math"><span style="background-image: url('../images/project-math.png');"></span><p>History of Math</p></div>
-                  <div class="projectcard" onclick="loadProject(this);" data-imageURL="../images/project-bridge.jpg" data-projectTitle="bridge"><span style="background-image: url('../images/project-bridge.jpg');"></span><p>Bridges</p></div>
-                  <div class="projectcard" onclick="loadProject(this);" data-imageURL="../images/project-printing.jpg" data-projectTitle="printing"><span style="background-image: url('../images/project-printing.jpg');"></span><p>Screen Printing</p></div>
-                  <div class="projectcard" onclick="loadProject(this);" data-imageURL="../images/project-magpie.jpg" data-projectTitle="magpie"><span style="background-image: url('../images/project-magpie.jpg');"></span><p>Magpie Lab</p></div>
+                  <div class="projectcard" onclick="loadProject(this,false);" data-imageURL="../images/project-coaster.jpg" data-projectTitle="coaster"><span style="background-image: url('../images/project-coaster.jpg');"></span><p>Roller Coaster</p></div>
+                  <div class="projectcard" onclick="loadProject(this,false);" data-imageURL="../images/project-math.png" data-projectTitle="math"><span style="background-image: url('../images/project-math.png');"></span><p>History of Math</p></div>
+                  <div class="projectcard" onclick="loadProject(this,false);" data-imageURL="../images/project-bridge.jpg" data-projectTitle="bridge"><span style="background-image: url('../images/project-bridge.jpg');"></span><p>Bridges</p></div>
+                  <div class="projectcard" onclick="loadProject(this,false);" data-imageURL="../images/project-printing.jpg" data-projectTitle="printing"><span style="background-image: url('../images/project-printing.jpg');"></span><p>Screen Printing</p></div>
+                  <div class="projectcard" onclick="loadProject(this,false);" data-imageURL="../images/project-magpie.jpg" data-projectTitle="magpie"><span style="background-image: url('../images/project-magpie.jpg');"></span><p>Magpie Lab</p></div>
                 </div>
             </div>
-            <div class="row">
+            <div class="row" id="projectData">
                 <div class="col-sm-6">
                   <div class="imgbox">
                     <img src="../images/project-deconstruction.jpg" id="projectImage" alt class="boximg constantSize" width="100%">
@@ -333,7 +333,7 @@
         </script>
         <script src="../js/scripts.js" type="text/javascript"></script>
         <script> loadCourses(document.getElementById("scienceCourseCard")); </script>
-        <script> loadProject(document.getElementById("deconstructionProject")); </script>
+        <script> loadProject(document.getElementById("deconstructionProject"),true); </script>
 
     <footer>
         <div class="notwide">
