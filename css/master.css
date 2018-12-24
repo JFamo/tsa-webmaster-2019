@@ -509,7 +509,7 @@ footer {
 }
 
 .nav-item{
-  font-size:1.5rem;
+  font-size:2rem;
   padding-left:0.5rem;
   padding-right:0.5rem;
 }
@@ -621,7 +621,7 @@ footer {
 }
 
 .titleImage{
-  height: calc(100vh - 94px - 68px);
+  height: calc(100vh - 95px);
   object-fit:cover;
   object-position:0px 27.5%;
 }
