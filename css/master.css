@@ -509,7 +509,9 @@ footer {
 }
 
 .nav-item{
-  font-size:1rem;
+  font-size:1.5rem;
+  padding-left:0.5rem;
+  padding-right:0.5rem;
 }
 
 .nav-link{
@@ -642,9 +644,5 @@ footer {
   width:100%;
   font-size:8rem;
   text-shadow:0 0 20px black;
-}
-
-.crossTitleBody{
-  font-size:2rem;
-  text-shadow:0 0 20px black;
+  padding-bottom:2rem;
 }
