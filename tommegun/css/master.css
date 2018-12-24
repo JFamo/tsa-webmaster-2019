@@ -294,7 +294,8 @@ ul {
 
 .nav-item{
   font-size:2rem;
-  width:10rem;
+  padding-left:0.5rem;
+  padding-right:0.5rem;
   text-align:center;
 }
 
