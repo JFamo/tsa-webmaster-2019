@@ -46,7 +46,11 @@ html{
   font-size:14px;  /* This literally defines the font size of the entire doc - important ! */ 
   height:100vh;
   overflow-x: hidden;
-  overflow-y: hidden;
+}
+@media only screen and (max-width: 575px) {
+  html{
+  overflow-x: auto;
+}
 }
 body {
   margin: 0;
@@ -54,17 +58,22 @@ body {
   font-family: 'Muli', sans-serif;
   font-size: 1.25rem;
   line-height: 1.5;
-  background-color: #F5F5F5;
+  background-color: white;
   height:100vh;
 }
 section {
-  max-width:800px;
+  max-width:1200px;
   padding-top: 3rem;
-  padding-bottom: 3rem;
   margin:0 auto;
+  min-height:80%;
 }
-.onesection{
-  height: calc(100vh - 54px - 106px - 50px);
+.fullsection{
+  max-width:100% !important;
+}
+@media only screen and (max-width: 575px) {
+  section {
+    padding-top: 0.5rem;
+  }
 }
 h1,
 h2 {
@@ -75,32 +84,40 @@ h2 {
 }
 h1 {
   font-size: 2.5rem;
-  color: #0a2463;
+  color: #D62828;
 }
 h2 {
-  font-size: 1.75rem;
+  font-size: 2rem;
   color:#3e92cc;
 }
 hr {
   border: 0;
-  background-color: #1e1e1e;
-  height: 1px;
-  margin: 1 1rem 1rem;
+  background-color: #0A2463;
+  height: 3px;
+  width:100%;
+  margin-top:0;
+  margin-bottom:2rem;
 }
-@media only screen and (max-width: 500px) {
+@media only screen and (max-width: 575px) {
   hr {
-    background-color: #d62828;
-    margin: -1rem 0 1rem 0;
+  }
+  h1{
+    margin-left:1rem;
   }
 }
 p,
 ul {
   padding-left: 1rem;
 }
-@media only screen and (max-width: 500px) {
-  p,
-  ul {
+@media only screen and (max-width: 575px) {
+  p, ul, small {
     padding: 0;
+  }
+  .header p{
+    padding-left: 14px;
+  }
+  .header small{
+    padding-left: 14px;
   }
 }
 a {
@@ -110,8 +127,7 @@ a:hover {
   color: #d62828;
 }
 .notwide {
-  max-width: 800px;
-  margin: 0 auto;
+  max-width: 100%;
 }
 .magic {
   display: block;
@@ -122,6 +138,13 @@ a:hover {
   align-items: center;
   justify-content: space-evenly;
   flex-wrap: wrap;
+}
+.centerFlex{
+	width:100%;	
+}
+.centerFlex div{
+	flex-basis: 45%;
+	flex-grow: 1;
 }
 .flex_left{
   justify-content: flex-start !important;
@@ -161,21 +184,43 @@ a:hover {
 }
 .header {
   background-color: #0a2463;
-  margin: 0 -2rem;
-  padding: 1rem;
+  padding: 1rem 3rem 1rem 3rem;
+  box-shadow: 0 2px 4px 0 rgba(0, 0, 0, 0.2), 0 3px 10px 0 rgba(0, 0, 0, 0.19);
+}
+.header p{
+  font-family: 'Poppins', sans-serif;
+  font-weight: 500;
+  letter-spacing: 0.5px;
+  word-wrap: break-word;
+  font-size:1.5rem;
+  margin:0;
+  color:white;
+}
+.header small{
+  font-family: 'Poppins', sans-serif;
+  font-weight: 400;
+  letter-spacing: 0.5px;
+  word-wrap: break-word;
+  font-size:1rem;
+  margin:0;
+  padding-left: 1rem;
+  color:white;
 }
 .header .notwide {
   justify-content: center;
 }
 .header img {
-  width: 5rem;
-  margin: 1rem;
+  margin: 0.1rem;
   display: inline-block;
+  float:center;
 }
-@media only screen and (max-width: 500px) {
-  .header img {
-    width: 8rem;
-    max-width: 50%;
+@media only screen and (max-width: 575px) {
+  .header {
+    padding: 1rem 1rem 1rem 1rem;
+  }
+
+  .header img{
+    display: none !important;
   }
 }
 .header h1 {
@@ -185,7 +230,7 @@ a:hover {
   text-align: center;
 }
 .navigation {
-  background-color: #1e1e1e;
+  background-color: white;
   margin: 0 -2rem;
 }
 .navigation .notwide a {
@@ -212,7 +257,7 @@ a:hover {
   display: block;
   margin: 1rem 1rem;
   padding: 1rem;
-  background-color: #1e1e1e;
+  background-color: white;
   color: #FBFBFB;
   box-shadow: 0 3px 6px rgba(0, 0, 0, 0.16), 0 3px 6px rgba(0, 0, 0, 0.23);
   letter-spacing: 0.5px;
@@ -229,6 +274,143 @@ a:hover {
 .swatch p {
   margin: 1rem;
   padding: 0;
+}
+.coursecard {
+  margin: 1rem;
+  box-shadow: 0 3px 6px rgba(0, 0, 0, 0.16), 0 3px 6px rgba(0, 0, 0, 0.23);
+  width:200px;
+  height:80px;
+  border-radius:0.1rem;
+  border-left: 2px solid #0a2463;
+  transition: all 0.2s;
+  overflow-x:hidden;
+  cursor: pointer;
+}
+.coursecard p{
+  padding: 0.75rem 1rem 0rem 1rem;
+  margin-bottom:0rem;
+  color: #0a2463;
+  font-family: 'Poppins', sans-serif;
+  font-weight: 700;
+}
+.coursecard small{
+  padding: 0rem 1rem 0rem 1rem;
+  color: black;
+  font-size: 0.6rem;
+}
+.coursecard:hover{
+  transform: translate(0,-2px);
+  box-shadow: 2px 3px 6px rgba(0, 0, 0, 0.16), 2px 3px 6px rgba(0, 0, 0, 0.23);
+}
+.teachercard {
+  margin: 1rem;
+  box-shadow: 0 3px 6px rgba(0, 0, 0, 0.16), 0 3px 6px rgba(0, 0, 0, 0.23);
+  width:400px;
+  height:250px;
+  border-radius:0.1rem;
+  border-left: 2px solid #0a2463;
+  transition: all 0.2s;
+  overflow-x:hidden;
+}
+.teachercard p{
+  padding: 0.75rem 1rem 0rem 1rem;
+  margin-bottom:0rem;
+  color: #0a2463;
+  font-family: 'Poppins', sans-serif;
+  font-weight: 700;
+}
+.teachercard small{
+  padding: 0rem 0rem 0rem 1rem;
+  color: black;
+  font-size: 1rem;
+  overflow:wrap;
+  display:block;
+}
+.teachercard img{
+  padding: 1rem 1rem 1rem 1rem;
+}
+.teachercard:hover{
+  transform: translate(0,-2px);
+  box-shadow: 2px 3px 6px rgba(0, 0, 0, 0.16), 2px 3px 6px rgba(0, 0, 0, 0.23);
+}
+.teachercard div{
+	padding: 0;	
+}
+
+.awardcard {
+  margin: 1rem;
+  box-shadow: 0 3px 6px rgba(0, 0, 0, 0.16), 0 3px 6px rgba(0, 0, 0, 0.23);
+  width:350px;
+  height:200px;
+  border-radius:0.1rem;
+  border-left: 2px solid #0a2463;
+  transition: all 0.2s;
+  overflow-x:hidden;
+}
+.awardcard p{
+  padding: 0.75rem 1rem 0rem 1rem;
+  margin-bottom:0rem;
+  color: #0a2463;
+  font-size:1.5rem;
+  font-family: 'Poppins', sans-serif;
+  font-weight: 700;
+}
+.awardcard small{
+  padding: 0rem 0rem 0rem 1rem;
+  color: black;
+  font-size: 1.2rem;
+  overflow:wrap;
+  display:block;
+}
+.awardcard img{
+  padding: 1rem 1rem 1rem 1rem;
+}
+.awardcard:hover{
+  transform: translate(0,-2px);
+  box-shadow: 2px 3px 6px rgba(0, 0, 0, 0.16), 2px 3px 6px rgba(0, 0, 0, 0.23);
+}
+.awardcard div{
+  padding: 0; 
+}
+
+.projectcard{
+  text-align:center;
+  width:250px;
+  height:180px;
+}
+.projectcard p{
+  padding: 0.75rem 1rem 0rem 1rem;
+  margin-bottom:0rem;
+  color: #0a2463;
+  font-family: 'Poppins', sans-serif;
+  font-weight: 700;
+}
+.projectcard span{
+  border-radius: 50%;
+  width:120px;
+  height:120px;
+  display:inline-block;
+  transition: all 0.2s ease-in-out;
+  opacity:0.6;
+  background-size:cover;
+  cursor:pointer;
+}
+.projectcard span:hover{
+  box-shadow: 2px 3px 6px rgba(0, 0, 0, 0.16), 2px 3px 6px rgba(0, 0, 0, 0.23);
+  opacity:1;
+}
+.projectcard span:active{
+  box-shadow: 2px 3px 6px rgba(0, 0, 0, 0.16), 2px 3px 6px rgba(0, 0, 0, 0.23);
+  background-color: #d62828;
+}
+.mottocard {
+  margin: 1rem;
+  box-shadow: 0 3px 6px rgba(0, 0, 0, 0.16), 0 3px 6px rgba(0, 0, 0, 0.23);
+  border-radius:0.1rem;
+  border-left: 5px solid #0a2463;
+  transition: all 0.2s;
+  overflow-x:hidden;
+  padding: 1.5rem 1.5rem 1.5rem 1.5rem;
 }
 .box {
   border: 1px solid #1e1e1e;
@@ -294,6 +476,9 @@ a:hover {
   color:#FBFBFB;
   background-color:#3e92cc;
 }
+.text_hilight{
+  color:#3e92cc;
+}
 .whitesection h1{
   color:white;
 }
@@ -313,11 +498,151 @@ a:hover {
   background-color:white;
 }
 footer {
-  margin: 0 -2rem;
-  background-color: #1e1e1e;
-  color: #E9EBED;
-  overflow: auto;
+  margin: 0;
+  background-color: #0a2463;
+  color: white;
   padding: 1rem;
-  box-sizing: border-box;
-  height:50px;
+}
+
+.nopadding{
+  padding:0;
+}
+
+.nav-item{
+  font-size:2rem;
+  padding-left:0.5rem;
+  padding-right:0.5rem;
+}
+
+.nav-link{
+  color:white !important;
+  text-decoration: none;
+  transition: color 0.1s;
+  display: inline-block;
+}
+
+.nav-link::after{
+  content: '';
+  width: 0;
+  display: block;
+  height: 2px;
+  transition: width 0.3s;
+  background: #D62828 !important;
+}
+
+.nav-link:hover::after{
+  width: 100%;
+}
+
+.nav-link:hover{
+  color: #D62828 !important;
+}
+
+.active{
+  color: #3E92CC !important;
+  text-decoration: none;
+  transition: color 0.1s;
+  display: inline-block;
+}
+
+.active:hover{
+  cursor:default;
+  color: #3E92CC !important;;
+}
+
+.active::after{
+  content: '';
+  width: 0;
+  display: block;
+  height: 0 !important;
+  transition: none !important;
+}
+
+.bodysection p{
+  padding-left:0;
+}
+
+@media only screen and (max-width: 575px) {
+  .bodysection{
+    padding-left:40px;
+  }
+}
+
+.verticalCenter{
+  position:relative; top:50%; -ms-transform: translateY(-50%); transform: translateY(-50%);
+}
+
+.row{
+  margin-left:0 !important;
+  margin-right:0 !important;
+}
+
+.rowSection{
+  padding-bottom:4rem;
+}
+
+@media only screen and (max-width: 575px) {
+  .col, .col-sm-6 {
+    padding-right:0 !important;
+    margin-right:0 !important;
+  }
+
+  .row {
+    max-width:100% !important;
+  }
+}
+
+.activityRow{
+  padding-bottom:3rem;
+}
+
+.constantSize{
+  object-fit: cover;
+  width:550px;
+  height:350px;
+}
+
+.projectSection{
+  background-color:white;
+  border-radius: 5px;
+  padding: 0.5rem 0.5rem 0.5rem 0.5rem;
+}
+.projectSection p{
+  margin-bottom:2rem;
+}
+
+.quoteText{
+	font-size:1.75rem;
+	font-style:italic;
+}
+
+.blockquote-footer{
+	background-color: white !important;
+}
+
+.titleImage{
+  height: calc(100vh - 95px);
+  object-fit:cover;
+  object-position:0px 27.5%;
+}
+
+.crossTitleBar{
+  background-image:linear-gradient(to bottom, rgba(0,0,0,0), rgba(0,0,0,0.9));
+  z-index:10000;
+  width:100%;
+  height:100%;
+  color:#0A2463;
+  position:absolute;
+  bottom:-1px;
+  text-align:center;
+}
+
+.crossTitleText{
+  color:white;
+  position:absolute;
+  bottom:0;
+  width:100%;
+  font-size:8rem;
+  text-shadow:0 0 20px black;
+  padding-bottom:2rem;
 }
