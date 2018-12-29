@@ -3,10 +3,10 @@ Styling for TSA Webmaster 2018-19 Tommegun Site
 @author Joshua Famous joshua.famous@gmail.com
 */
 .black {
-  background-color: #000000;
+  background-color: #333333;
 }
 .white {
-  background-color: #FFFFFF;
+  background-color: #CCCCCC;
 }
 .bg-accent {
   background-color: #CC0000;
@@ -17,7 +17,6 @@ Styling for TSA Webmaster 2018-19 Tommegun Site
 .bg-gray {
   background-color: #272727
 }
-
 .accent {
   color: #CC0000;
 }
@@ -26,8 +25,7 @@ Styling for TSA Webmaster 2018-19 Tommegun Site
 }
 html{
   font-size:14px;  /* This literally defines the font size of the entire doc - important ! */ 
-  height:100vh;
-  overflow-x: hidden;
+  overflow-x:hidden;
 }
 @media only screen and (max-width: 575px) {
   html{
@@ -35,7 +33,7 @@ html{
 }
 }
 p{
-  color: #FFFFFF;
+  color: #CCCCCC;
 }
 body {
   margin: 0;
@@ -48,7 +46,6 @@ body {
 }
 section {
   width:100%;
-  padding-bottom:10rem;
   padding-left:10%;
   padding-right:10%;
 }
@@ -268,18 +265,6 @@ ul {
   bottom:0px;
   width:100%;
 }
-.boximg{
-  width:100%;
-  display:block;
-  padding-top:25%;
-}
-.tall{
-  min-height: calc(100vh - 8rem);
-}
-.half{
-  padding:0.5rem;
-  margin:0.5rem;
-}
 .button {
   font-family: 'PT Sans', sans-serif;
   font-weight: 500;
@@ -378,8 +363,7 @@ ul {
 
 .titlerow{
   display: flex; justify-content: center;
-  padding-top:2rem;
-  padding-bottom:2rem;
+  margin-bottom:2rem;
 }
 
 .rowSection{
