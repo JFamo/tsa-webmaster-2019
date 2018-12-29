@@ -2,3 +2,33 @@
 Styling for TSA Webmaster 2018-19 Tommegun Site
 @author Joshua Famous joshua.famous@gmail.com
 */
+.color_black{
+  color:#252323;
+}
+.color_white{
+  color:#fffffa;
+}
+.color_primary{
+  color:#8c2f39;
+}
+.color_accent{
+  color:#E3170A;
+}
+.color_hilight{
+  color:#f3c969;
+}
+.bg_black{
+  background-color:#252323;
+}
+.bg_white{
+  background-color:#fffffa;
+}
+.bg_primary{
+  background-color:#8c2f39;
+}
+.bg_accent{
+  background-color:#E3170A;
+}
+.bg_hilight{
+  background-color:#f3c969;
+}
