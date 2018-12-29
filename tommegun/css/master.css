@@ -3,16 +3,19 @@ Styling for TSA Webmaster 2018-19 Tommegun Site
 @author Joshua Famous joshua.famous@gmail.com
 */
 .black {
-  background-color: #000000;
+  background-color: #333333;
 }
 .white {
-  background-color: #FFFFFF;
+  background-color: #CCCCCC;
 }
 .bg-accent {
   background-color: #CC0000;
 }
 .bg-hilight {
   background-color: #FFD000;
+}
+.bg-gray {
+  background-color: #272727
 }
 .accent {
   color: #CC0000;
@@ -22,8 +25,7 @@ Styling for TSA Webmaster 2018-19 Tommegun Site
 }
 html{
   font-size:14px;  /* This literally defines the font size of the entire doc - important ! */ 
-  height:100vh;
-  overflow-x: hidden;
+  overflow-x:hidden;
 }
 @media only screen and (max-width: 575px) {
   html{
@@ -31,7 +33,7 @@ html{
 }
 }
 p{
-  color: #FFFFFF;
+  color: #CCCCCC;
 }
 body {
   margin: 0;
@@ -43,9 +45,16 @@ body {
   height:100vh;
 }
 section {
-  max-width:1200px;
-  margin:0 auto;
-  padding-bottom:10rem;
+  width:100%;
+  padding-left:10%;
+  padding-right:10%;
+  padding-top:10vh;
+  padding-bottom:10vh;
+}
+.tall{
+  min-height:calc(100vh - 8rem);
+  padding-bottom:0px !important;
+  padding-top:0px !important;
 }
 .sectionsplitter{
   margin:0;
@@ -69,7 +78,7 @@ h1 {
 }
 h2 {
   font-size: 2rem;
-  color:#FFD000;
+  color:#CC0000;
 }
 .brandheader{
   font-family: 'Cardo', serif;
@@ -84,17 +93,17 @@ h2 {
   font-weight: 500;
   font-size: 1.5rem;
   color: #FFFFFF;
-  border-bottom:2px solid #cc0000;
-  border-left:2px solid #000000;
-  border-right:2px solid #000000;
-  border-top:2px solid #000000;
-  background-color:#000000;
+  border-bottom: 2px solid #FFFFFF;
+  border-left: none;
+  border-right: none;
+  border-top: none;
+  background-color: rgba(0,0,0,0.00);
   white-space:nowrap;
 }
 .headerbutton:hover{
   color: #CC0000;
   border-bottom:2px solid #cc0000;
-  background-color:#000000;
+  background-color:rgba(0,0,0,0.00);
   cursor:default;
 }
 .spacedBody{
@@ -138,6 +147,7 @@ ul {
   align-items: center;
   justify-content: space-evenly;
   flex-wrap: wrap;
+  width:100%;
 }
 .flex_left{
   justify-content: flex-start !important;
@@ -175,13 +185,23 @@ ul {
   box-shadow: 0 2px 4px 0 rgba(0, 0, 0, 0.2), 0 3px 10px 0 rgba(0, 0, 0, 0.19);
   height:8rem;
   border-bottom:2px solid #FFD000;
+  border-top:2px solid #FFD000;
 }
+
+.sticky{
+  position:fixed;
+  top:0;
+  width:100%;
+  background-color:black;
+  z-index:1000;
+}
+
 .header p{
   font-family: 'Cardo', serif;
   font-weight: 700;
   letter-spacing: 0.5px;
   word-wrap: break-word;
-  font-size:3rem;
+  font-size:4rem;
   margin:0;
   color:#FFD000;
 }
@@ -246,18 +266,6 @@ ul {
   bottom:0px;
   width:100%;
 }
-.boximg{
-  width:100%;
-  display:block;
-  padding-top:25%;
-}
-.tall{
-  min-height: calc(100vh - 8rem);
-}
-.half{
-  padding:0.5rem;
-  margin:0.5rem;
-}
 .button {
   font-family: 'PT Sans', sans-serif;
   font-weight: 500;
@@ -282,7 +290,8 @@ ul {
 
 .nav-item{
   font-size:2rem;
-  width:10rem;
+  padding-left:0.5rem;
+  padding-right:0.5rem;
   text-align:center;
 }
 
@@ -329,11 +338,6 @@ ul {
   height: 0 !important;
   transition: none !important;
 }
-
-.bodysection{
-  padding-top:10%;
-}
-
 .bodysection p{
   padding-left:0;
 }
@@ -355,8 +359,7 @@ ul {
 
 .titlerow{
   display: flex; justify-content: center;
-  padding-top:2rem;
-  padding-bottom:2rem;
+  margin-bottom:5rem;
 }
 
 .rowSection{
@@ -386,7 +389,7 @@ ul {
 
 .titletextart{
   width:100%;
-  padding-top:20%;
+  padding-top:0%
 }
 
 #fp-nav span{
@@ -403,7 +406,7 @@ ul {
 }
 
 a{
-  color:#cc0000;
+  color:#CC0000;
   transition:0.2s all ease-in-out;
 }
 
@@ -421,6 +424,13 @@ footer{
   border-right:2px solid #000000;
   border-bottom:2px solid #000000;
   background-color:#000000;
+}
+
+footer a{
+  color:#FFD000;
+}
+footer a:hover{
+  color:#CC0000;
 }
 
 .fa{
@@ -441,4 +451,21 @@ footer{
 .disclaimer{
   font-size:1rem;
   color:#aaaaaa;
+}
+
+.merchcard{
+  border: 2px solid white;
+  margin-left:1rem;
+  margin-right:1rem;
+}
+
+@media only screen and (max-width: 575px) {
+  .merchcard{
+    border: 2px solid white;
+    margin-top:1rem;
+    margin-bottom:1rem;
+  }
+  .merchcard img{
+    display:none;
+  }
 }
