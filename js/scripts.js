@@ -13,7 +13,7 @@ function loadCourses(element){
 	}
 }
 
-function loadProject(element){
+function loadProject(element, isInitial){
 	var projectTitle = element.getAttribute('data-projectTitle');
 	var projects = document.getElementsByClassName("projectSection");
 	for(var i = 0; i < projects.length; i++)
@@ -27,6 +27,10 @@ function loadProject(element){
 	   	}
 	}
 	document.getElementById("projectImage").src = element.getAttribute('data-imageURL');
+	if(!isInitial){
+		var elmnt = document.getElementById("projectData");
+		elmnt.scrollIntoView();
+	}
 }
 
 function loadOfficer(element){
@@ -43,4 +47,6 @@ function loadOfficer(element){
 	   	}
 	}
 	document.getElementById("officerImage").src = element.getAttribute('data-imageURL');
+	var elmnt = document.getElementById("officerData");
+	elmnt.scrollIntoView();
 }
