@@ -5,40 +5,41 @@ Styling for TSA Webmaster 2018-19 Tommegun Site
 
 /* Generic Definitions */
 .color_black{
-  color:#252323;
+  color:#170203;
 }
 .color_white{
-  color:#fffffa;
+  color:#fdfdeb;
 }
 .color_primary{
-  color:#8c2f39;
+  color:#dc0527;
 }
 .color_accent{
-  color:#E3170A;
+  color:#ea3826;
 }
 .color_hilight{
-  color:#f3c969;
+  color:#fcd577;
 }
 .bg_black{
-  background-color:#252323;
+  background-color:#170203;
 }
 .bg_white{
-  background-color:#fffffa;
+  background-color:#fdfdeb;
 }
 .bg_primary{
-  background-color:#8c2f39;
+  background-color:#dc0527;
 }
 .bg_accent{
-  background-color:#E3170A;
+  background-color:#ea3826;
 }
 .bg_hilight{
-  background-color:#f3c969;
+  background-color:#fcd577;
 }
 
 /* Overrides */
 body{
   margin:0 0 0 0;
   line-height:1.4;
+  font-family: 'PT Sans', sans-serif;
 }
 html{
   font-size:16px;
@@ -46,42 +47,67 @@ html{
 nav{
   display: flex;
   align-items: center;
-  background: #8c2f39;
-  border-top: 4px solid #f3c969;
+  justify-content: center;
+  background: #dc0527;
+  border-top: 4px solid #fcd577;
+  border-bottom: 4px solid #fcd577;
   padding: 1rem;
   box-shadow: 0px 2px 1px 1px rgba(0,0,0,0.1);
   position: sticky;
   top: -4px;
-  color: #fffffa;
+  color: #fdfdeb;
   flex-wrap: wrap;
   z-index: 3;
 }
-nav h1{
-  flex-grow: 1;
-  text-shadow: -2px 2px 0px rgba(0,0,0,0.1);
-  font-size:1.75rem;
-}
-nav div{
-  display: flex;
-  flex-wrap: wrap;
-}
-nav div a{
-  margin: 0 1rem;
+nav a{
+  margin: 0 3rem;
   font-size: 1.75rem;
   text-decoration: none;
-  color: #fffffa;
+  color: #fdfdeb;
   padding: 6px;
-  border: 2px solid #8c2f39;
+  border: 2px solid #dc0527;
   transition: border-color 0.2s ease-in-out, box-shadow 0.2s ease-in-out;
   text-align: center;
 }
-
 nav a:hover{
-  border: 2px solid #f3c969;
+  border: 2px solid #fcd577;
   box-shadow: -2px 2px 0px 0px rgba(0,0,0,0.1);
+}
+h1{
+  font-family: 'Poppins', sans-serif;
+}
+h2{
+  font-family: 'Poppins', sans-serif;
 }
 
 /* Novel Classes */
 #titlesection{
-  height:calc(100vh - 7.5rem);
+  height:calc(100vh - 4.5rem);
+}
+#coverText{
+  position:absolute;
+  bottom:calc(calc(calc(100vh - 4.5rem) / 2) - 3.25rem);
+  margin-left:5rem;
+  z-index:5;
+  color:#fdfdeb;
+}
+#coverText h1{
+  font-size:6rem;
+  margin-bottom:0;
+}
+#coverText h2{
+  font-size:4rem;
+  margin-top:0;
+  margin-bottom:0;
+}
+.buttonLink{
+  text-decoration: none;
+  font-size:1.5rem;
+  color:#fdfdeb;
+  padding:1rem;
+  margin:2px;
+}
+.buttonLink:hover{
+  border:2px solid #fdfdeb;
+  margin:0;
 }
