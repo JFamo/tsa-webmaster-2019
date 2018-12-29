@@ -2,6 +2,8 @@
 Styling for TSA Webmaster 2018-19 Tommegun Site
 @author Joshua Famous joshua.famous@gmail.com
 */
+
+/* Generic Definitions */
 .color_black{
   color:#252323;
 }
@@ -31,4 +33,55 @@ Styling for TSA Webmaster 2018-19 Tommegun Site
 }
 .bg_hilight{
   background-color:#f3c969;
+}
+
+/* Overrides */
+body{
+  margin:0 0 0 0;
+  line-height:1.4;
+}
+html{
+  font-size:16px;
+}
+nav{
+  display: flex;
+  align-items: center;
+  background: #8c2f39;
+  border-top: 4px solid #f3c969;
+  padding: 1rem;
+  box-shadow: 0px 2px 1px 1px rgba(0,0,0,0.1);
+  position: sticky;
+  top: -4px;
+  color: #fffffa;
+  flex-wrap: wrap;
+  z-index: 3;
+}
+nav h1{
+  flex-grow: 1;
+  text-shadow: -2px 2px 0px rgba(0,0,0,0.1);
+  font-size:1.75rem;
+}
+nav div{
+  display: flex;
+  flex-wrap: wrap;
+}
+nav div a{
+  margin: 0 1rem;
+  font-size: 1.75rem;
+  text-decoration: none;
+  color: #fffffa;
+  padding: 6px;
+  border: 2px solid #8c2f39;
+  transition: border-color 0.2s ease-in-out, box-shadow 0.2s ease-in-out;
+  text-align: center;
+}
+
+nav a:hover{
+  border: 2px solid #f3c969;
+  box-shadow: -2px 2px 0px 0px rgba(0,0,0,0.1);
+}
+
+/* Novel Classes */
+#titlesection{
+  height:calc(100vh - 7.5rem);
 }
