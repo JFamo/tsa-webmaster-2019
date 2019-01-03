@@ -38,7 +38,7 @@ p{
 body {
   margin: 0;
   padding: 0 0;
-  font-family: 'PT Sans', sans-serif;
+  font-family: 'Staatliches', cursive;
   font-size: 1.25rem;
   line-height: 1.5;
   background-color: #000000;
@@ -67,7 +67,7 @@ section {
 }
 h1,
 h2 {
-  font-family: 'Cardo', serif;
+  font-family: 'Staatliches', cursive;
   font-weight: 500;
   letter-spacing: 0.5px;
   word-wrap: break-word;
@@ -81,7 +81,7 @@ h2 {
   color:#CC0000;
 }
 .brandheader{
-  font-family: 'Cardo', serif;
+  font-family: 'Staatliches', cursive;
   font-weight: 500;
   letter-spacing: 0.5px;
   word-wrap: break-word;
@@ -89,9 +89,9 @@ h2 {
   margin:0;
 }
 .headerbutton{
-  font-family: 'Cardo', serif;
+  font-family: 'Staatliches', cursive;
   font-weight: 500;
-  font-size: 1.5rem;
+  font-size: 2rem;
   color: #FFFFFF;
   border-bottom: 2px solid #FFFFFF;
   border-left: none;
@@ -197,7 +197,7 @@ ul {
 }
 
 .header p{
-  font-family: 'Cardo', serif;
+  font-family: 'Staatliches', cursive;
   font-weight: 700;
   letter-spacing: 0.5px;
   word-wrap: break-word;
@@ -206,7 +206,7 @@ ul {
   color:#FFD000;
 }
 .header small{
-  font-family: 'Cardo', serif;
+  font-family: 'Staatliches', cursive;
   font-weight: 400;
   letter-spacing: 0.5px;
   word-wrap: break-word;
@@ -216,7 +216,7 @@ ul {
   color:white;
 }
 .header a{
-  font-family: 'Cardo', serif;
+  font-family: 'Staatliches', cursive;
 }
 .header .notwide {
   justify-content: center;
@@ -242,7 +242,7 @@ ul {
   text-align: center;
 }
 .brand {
-  font-family: 'PT Sans', sans-serif;
+  font-family: 'Staatliches', cursive;
   font-weight: 700;
   font-size: 2rem;
   text-align: center;
@@ -267,7 +267,7 @@ ul {
   width:100%;
 }
 .button {
-  font-family: 'PT Sans', sans-serif;
+  font-family: 'Staatliches', cursive;
   font-weight: 500;
   letter-spacing: 0.5px;
   word-wrap: break-word;
@@ -359,7 +359,7 @@ ul {
 
 .titlerow{
   display: flex; justify-content: center;
-  margin-bottom:5rem;
+  padding-top: calc(calc(calc(24rem - 20vh) / 2) - 1rem);
 }
 
 .rowSection{
@@ -415,7 +415,7 @@ a:hover{
 }
 
 footer{
-  font-family: 'Cardo', serif;
+  font-family: 'Staatliches', cursive;
   font-size:1.5rem;
   color:white;
   padding: 5rem 25% 5rem 25%;
@@ -451,6 +451,14 @@ footer a:hover{
 .disclaimer{
   font-size:1rem;
   color:#aaaaaa;
+}
+
+.backgroundsection{
+  	min-height: 24rem;
+  	background-attachment: fixed;
+  	background-position: center;
+  	background-repeat: no-repeat;
+  	background-size: cover;
 }
 
 .merchcard{
