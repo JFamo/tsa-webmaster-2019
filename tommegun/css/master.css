@@ -99,6 +99,7 @@ h2 {
   border-top: none;
   background-color: rgba(0,0,0,0.00);
   white-space:nowrap;
+  text-shadow: 0 0 10px #000, 0 0 10px #fff, 0 0 20px #000, 0 0 20px #000, 0 0 30px #000, 0 0 40px #000, 0 0 50px #000;
 }
 .headerbutton:hover{
   color: #CC0000;
