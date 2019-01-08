@@ -455,6 +455,11 @@ footer a:hover{
   color:#aaaaaa;
 }
 
+.readmore{
+  margin-top:2rem;
+  margin-left:15px;
+}
+
 .backgroundsection{
   	min-height: 24rem;
   	background-attachment: fixed;
