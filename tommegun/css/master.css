@@ -26,6 +26,7 @@ Styling for TSA Webmaster 2018-19 Tommegun Site
 html{
   font-size:14px;  /* This literally defines the font size of the entire doc - important ! */ 
   overflow-x:hidden;
+  scroll-behavior: smooth;
 }
 @media only screen and (max-width: 575px) {
   html{
