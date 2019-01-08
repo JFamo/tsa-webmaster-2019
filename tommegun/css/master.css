@@ -94,7 +94,7 @@ h2 {
   font-weight: 500;
   font-size: 2rem;
   color: #FFFFFF;
-  border-bottom: 2px solid #FFFFFF;
+  border-bottom: 5px solid #FFFFFF;
   border-left: none;
   border-right: none;
   border-top: none;
@@ -104,7 +104,7 @@ h2 {
 }
 .headerbutton:hover{
   color: #CC0000;
-  border-bottom:2px solid #cc0000;
+  border-bottom:5px solid #cc0000;
   background-color:rgba(0,0,0,0.00);
   cursor:default;
 }
