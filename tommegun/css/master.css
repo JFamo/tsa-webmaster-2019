@@ -81,11 +81,6 @@ h2 {
   font-size: 2rem;
   color:#CC0000;
 }
-img{
-	width: 500px;
-	height: 300px;
-	object-fit: cover;
-}
 .brandheader{
   font-family: 'Staatliches', cursive;
   font-weight: 500;
