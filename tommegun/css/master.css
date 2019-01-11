@@ -26,6 +26,7 @@ Styling for TSA Webmaster 2018-19 Tommegun Site
 html{
   font-size:14px;  /* This literally defines the font size of the entire doc - important ! */ 
   overflow-x:hidden;
+  scroll-behavior: smooth;
 }
 @media only screen and (max-width: 575px) {
   html{
@@ -93,16 +94,17 @@ h2 {
   font-weight: 500;
   font-size: 2rem;
   color: #FFFFFF;
-  border-bottom: 2px solid #FFFFFF;
+  border-bottom: 5px solid #FFFFFF;
   border-left: none;
   border-right: none;
   border-top: none;
   background-color: rgba(0,0,0,0.00);
   white-space:nowrap;
+  text-shadow: 0 0 10px #000, 0 0 10px #fff, 0 0 20px #000, 0 0 20px #000, 0 0 30px #000, 0 0 40px #000, 0 0 50px #000;
 }
 .headerbutton:hover{
   color: #CC0000;
-  border-bottom:2px solid #cc0000;
+  border-bottom:5px solid #cc0000;
   background-color:rgba(0,0,0,0.00);
   cursor:default;
 }
@@ -453,12 +455,21 @@ footer a:hover{
   color:#aaaaaa;
 }
 
+.readmore{
+  margin-top:2rem;
+  margin-left:15px;
+}
+
 .backgroundsection{
   	min-height: 24rem;
   	background-attachment: fixed;
   	background-position: center;
   	background-repeat: no-repeat;
   	background-size: cover;
+}
+
+#navbarStaticBlock{
+	height:calc(84px + 2rem);
 }
 
 .merchcard{
