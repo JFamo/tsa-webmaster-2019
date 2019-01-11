@@ -645,4 +645,23 @@ footer {
   font-size:8rem;
   text-shadow:0 0 20px black;
   padding-bottom:2rem;
+  line-height:0.5;
+}
+
+@media only screen and (max-width: 830px) {
+  .crossTitleText{
+    line-height:1;
+  }
+}
+
+.crossTitleSubtext{
+  color:white;
+  font-size:2rem;
+  text-shadow:0 0 20px black;
+  padding-bottom:0rem;
+  line-height:1;
+}
+
+.awardimg{
+	
 }

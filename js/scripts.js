@@ -29,7 +29,7 @@ function loadProject(element, isInitial){
 	document.getElementById("projectImage").src = element.getAttribute('data-imageURL');
 	if(!isInitial){
 		var elmnt = document.getElementById("projectData");
-		elmnt.scrollIntoView();
+		elmnt.scrollIntoView({ block: 'start',  behavior: 'smooth' });
 	}
 }
 
