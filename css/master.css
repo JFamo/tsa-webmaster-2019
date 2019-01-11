@@ -385,7 +385,15 @@ a:hover {
 .awardcard div{
   padding: 0; 
 }
-
+@media only screen and (max-width: 575px) {
+  .awardcard{
+    width:90%;
+    height:auto;
+  }
+  .awardcard div{
+    padding-bottom:0.375rem; /* There will always be two nested divs in award card. 2 * 0.375 = 0.75, to match top */
+  }
+}
 .projectcard{
   text-align:center;
   width:250px;
