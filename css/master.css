@@ -72,7 +72,7 @@ section {
 }
 @media only screen and (max-width: 575px) {
   section {
-    padding-top: 0.5rem;
+    padding-top: 1rem;
   }
 }
 h1,
@@ -100,6 +100,7 @@ hr {
 }
 @media only screen and (max-width: 575px) {
   hr {
+    margin-left:14px;
   }
   h1{
     margin-left:1rem;
@@ -108,17 +109,6 @@ hr {
 p,
 ul {
   padding-left: 1rem;
-}
-@media only screen and (max-width: 575px) {
-  p, ul, small {
-    padding: 0;
-  }
-  .header p{
-    padding-left: 14px;
-  }
-  .header small{
-    padding-left: 14px;
-  }
 }
 a {
   color: #0a2463;
@@ -221,6 +211,17 @@ a:hover {
 
   .header img{
     display: none !important;
+  }
+}
+@media only screen and (max-width: 575px) {
+  p, ul, small {
+    padding: 0;
+  }
+  .header p{
+    padding-left: 4px;
+  }
+  .header small{
+    padding-left: 4px;
   }
 }
 .header h1 {
