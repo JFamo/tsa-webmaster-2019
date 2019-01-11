@@ -46,7 +46,8 @@ function loadOfficer(element){
 	   		thisOfficer.style.display = "none";
 	   	}
 	}
-	document.getElementById("officerImage").src = element.getAttribute('data-imageURL');
+	//No officer images for now, still hoping KP can do sketches
+	//document.getElementById("officerImage").src = element.getAttribute('data-imageURL');
 	var elmnt = document.getElementById("officerData");
 	elmnt.scrollIntoView();
 }
