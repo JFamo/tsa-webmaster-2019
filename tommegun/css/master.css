@@ -468,6 +468,10 @@ footer a:hover{
   	background-size: cover;
 }
 
+#navbarStaticBlock{
+	height:calc(84px + 2rem);
+}
+
 .merchcard{
   border: 2px solid white;
   margin-left:1rem;
