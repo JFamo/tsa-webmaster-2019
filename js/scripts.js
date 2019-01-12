@@ -29,7 +29,7 @@ function loadProject(element, isInitial){
 	document.getElementById("projectImage").src = element.getAttribute('data-imageURL');
 	if(!isInitial){
 		var elmnt = document.getElementById("projectData");
-		elmnt.scrollIntoView();
+		elmnt.scrollIntoView({ block: 'start',  behavior: 'smooth' });
 	}
 }
 
@@ -46,7 +46,8 @@ function loadOfficer(element){
 	   		thisOfficer.style.display = "none";
 	   	}
 	}
-	document.getElementById("officerImage").src = element.getAttribute('data-imageURL');
+	//No officer images for now, still hoping KP can do sketches
+	//document.getElementById("officerImage").src = element.getAttribute('data-imageURL');
 	var elmnt = document.getElementById("officerData");
 	elmnt.scrollIntoView();
 }
