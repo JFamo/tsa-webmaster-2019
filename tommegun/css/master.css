@@ -43,7 +43,6 @@ body {
   font-size: 1.25rem;
   line-height: 1.5;
   background-color: #000000;
-  height:100vh;
 }
 section {
   width:100%;
@@ -60,11 +59,6 @@ section {
 .sectionsplitter{
   margin:0;
   background-color: #CC0000;
-}
-@media only screen and (max-width: 575px) {
-  section {
-    padding-top: 0.5rem;
-  }
 }
 h1,
 h2 {
@@ -125,7 +119,7 @@ hr {
   hr {
   }
   h1{
-    margin-left:1rem;
+    margin-left:0;
   }
 }
 p,
@@ -435,6 +429,23 @@ footer a:hover{
   color:#CC0000;
 }
 
+@media only screen and (max-width: 1024px) {
+  footer{
+    padding: 5rem 15% 5rem 15%;
+  }
+}
+
+@media only screen and (max-width: 725px) {
+  footer{
+    padding: 5rem 10% 5rem 10%;
+  }
+}
+@media only screen and (max-width: 575px) {
+  footer{
+    padding: 5rem 2.5% 5rem 2.5%;
+  }
+}
+
 .fa{
   font-size:4rem;
 }
@@ -486,5 +497,11 @@ footer a:hover{
   }
   .merchcard img{
     display:none;
+  }
+}
+
+@media only screen and (max-width: 575px) {
+  .collidingtopcolumn{
+    padding-bottom:2rem;
   }
 }
