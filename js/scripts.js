@@ -33,7 +33,7 @@ function loadProject(element, isInitial){
 	}
 }
 
-function loadOfficer(element){
+function loadOfficer(element, isInitial){
 	var officer = element.getAttribute('data-officer');
 	var officers = document.getElementsByClassName("projectSection");
 	for(var i = 0; i < officers.length; i++)
@@ -48,6 +48,8 @@ function loadOfficer(element){
 	}
 	//No officer images for now, still hoping KP can do sketches
 	//document.getElementById("officerImage").src = element.getAttribute('data-imageURL');
-	var elmnt = document.getElementById("officerData");
-	elmnt.scrollIntoView();
+	if(!isInitial){
+		var elmnt = document.getElementById("officerData");
+		elmnt.scrollIntoView();
+	}
 }
