@@ -146,10 +146,6 @@ hr {
     margin-left:0;
   }
 }
-p,
-ul {
-  padding-left: 1rem;
-}
 @media only screen and (max-width: 575px) {
   p, ul, small {
     padding: 0;
