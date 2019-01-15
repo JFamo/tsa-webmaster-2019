@@ -576,3 +576,16 @@ footer a:hover{
   margin-top:2rem;
   margin-bottom:2rem;
 }
+
+.shopitem{
+  width:45%;
+  padding:2rem 2rem 2rem 2rem;
+  margin:1rem 1rem;
+  background-color: #eeeeee;
+  flex:1 0 auto;
+}
+
+.shopitem h1{
+  margin-bottom: 0;
+  margin-top:1rem;
+}
