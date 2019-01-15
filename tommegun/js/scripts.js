@@ -23,19 +23,19 @@ function flipMerch(item){
 	if(item=="hoodie"){
 		elem = document.getElementById("merch-hoodieimg");
 		if(elem.src.includes("merch-hoodiefront")){
-			elem.src = "../images/merch-hoodieback.png";
+			elem.src = "../images/merch-hoodieback.PNG";
 		}
 		else{
-			elem.src = "../images/merch-hoodiefront.png";
+			elem.src = "../images/merch-hoodiefront.PNG";
 		}
 	}
 	else if(item=="tshirt"){
 		elem = document.getElementById("merch-shirtimg");
 		if(elem.src.includes("merch-tshirtfront")){
-			elem.src = "../images/merch-tshirtback.png";
+			elem.src = "../images/merch-tshirtback.PNG";
 		}
 		else{
-			elem.src = "../images/merch-tshirtfront.png";
+			elem.src = "../images/merch-tshirtfront.PNG";
 		}
 	}
 }
