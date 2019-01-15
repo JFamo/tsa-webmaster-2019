@@ -47,6 +47,18 @@ section {
   padding-top:10vh;
   padding-bottom:10vh;
 }
+@media only screen and (max-width: 875px) {
+  section{
+    padding-left:10%;
+    padding-right:10%;
+  }
+}
+@media only screen and (max-width: 575px) {
+  section{
+    padding-left:0%;
+    padding-right:0%;
+  }
+}
 .tall{
   min-height:calc(100vh - 8rem);
   padding-bottom:0px !important;
@@ -424,7 +436,7 @@ a:hover{
 footer{
   font-family: 'Staatliches', cursive;
   font-size:1.5rem;
-  color:white;
+  color:#aaaaaa;
   padding: 5rem 25% 5rem 25%;
   border-top:2px solid #FFD000;
   border-left:2px solid #000000;
@@ -468,7 +480,7 @@ footer a:hover{
 .tommeform input{
   background-color: black;
   border: 1px solid #FFD000;
-  color:white;
+  color:#aaaaaa;
   padding:1rem 1rem 1rem 1rem;
 }
 
@@ -521,4 +533,12 @@ footer a:hover{
   color:#FFD000;
   padding-bottom: 0;
   margin-bottom: 0;
+}
+
+.show{
+  background-color:white;
+  z-index:10;
+  border-bottom:2px solid #cc0000;
+  border-right:2px solid #cc0000;
+  border-left:2px solid #cc0000;
 }
