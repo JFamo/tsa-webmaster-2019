@@ -556,3 +556,9 @@ footer a:hover{
   border-right:2px solid #cc0000;
   border-left:2px solid #cc0000;
 }
+
+.blogarticle{
+  padding:2rem 2rem 2rem 2rem;
+  background-color: #eeeeee;
+  margin-bottom:2rem;
+}
