@@ -303,17 +303,21 @@ hr {
   font-weight: 500;
   letter-spacing: 0.5px;
   word-wrap: break-word;
-  color: #FFFFFF;
+  color: #FFFFFF !important;
   border:2px solid #FFFFFF;
   background-color:#000000;
   padding-left:1rem;
   padding-right:1rem;
   transition: 0.8s all;
+  padding-top:3px;
+  padding-bottom:3px;
+  text-decoration: none;
 }
 .button:hover{
-  color: #000000;
+  color: #000000 !important;
   background-color:#FFFFFF;
   cursor:pointer;
+  text-decoration: none;
 }
 
 .nopadding{
@@ -491,6 +495,10 @@ footer a:hover{
   text-decoration: none !important;
 }
 
+.tommeform{
+  position: relative;
+}
+
 .tommeform input{
   background-color: #111111;
   border: 1px solid #FFD000;
@@ -501,6 +509,7 @@ footer a:hover{
 .disclaimer{
   font-size:1rem;
   color:#aaaaaa;
+  position: relative;
 }
 
 .readmore{
