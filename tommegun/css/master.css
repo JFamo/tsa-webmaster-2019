@@ -158,6 +158,12 @@ hr {
     filter:opacity(10%);
   }
 }
+@media only screen and (max-width: 1025px) {
+  #tommegunFooterImage{
+    -webkit-filter: opacity(10%);
+    filter:opacity(10%);
+  }
+}
 @media only screen and (max-width: 575px) {
   p, ul, small {
     padding: 0;
