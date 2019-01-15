@@ -146,6 +146,18 @@ hr {
     margin-left:0;
   }
 }
+@media only screen and (max-width: 720px) {
+  #tommegunTitleImage{
+    -webkit-filter: opacity(10%);
+    filter:opacity(10%);
+  }
+}
+@media only screen and (max-width: 1325px) {
+  #tommegunBioImage{
+    -webkit-filter: opacity(10%);
+    filter:opacity(10%);
+  }
+}
 @media only screen and (max-width: 575px) {
   p, ul, small {
     padding: 0;
