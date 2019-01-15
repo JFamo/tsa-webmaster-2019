@@ -14,3 +14,25 @@ function scrollNavbar() {
     navblock.style.display = "none";
   }
 }
+
+function flipMerch(item){
+	var elem;
+	if(item=="hoodie"){
+		elem = document.getElementById("merch-hoodieimg");
+		if(elem.src.includes("merch-hoodiefront")){
+			elem.src = "../images/merch-hoodieback.png";
+		}
+		else{
+			elem.src = "../images/merch-hoodiefront.png";
+		}
+	}
+	else if(item=="tshirt"){
+		elem = document.getElementById("merch-shirtimg");
+		if(elem.src.includes("merch-tshirtfront")){
+			elem.src = "../images/merch-tshirtback.png";
+		}
+		else{
+			elem.src = "../images/merch-tshirtfront.png";
+		}
+	}
+}
