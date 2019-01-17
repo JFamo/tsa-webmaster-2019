@@ -152,7 +152,7 @@ hr {
     filter:opacity(10%);
   }
 }
-@media only screen and (max-width: 1325px) {
+@media only screen and (max-width: 1500px) {
   #tommegunBioImage{
     -webkit-filter: opacity(10%);
     filter:opacity(10%);
