@@ -3,10 +3,11 @@
     <head>
         <meta charset="utf-8">
         <title>TommeGun</title>
-        <link href="https://fonts.googleapis.com/css?family=Open+Sans:400,400i,700" rel="stylesheet">
-        <link href="https://fonts.googleapis.com/css?family=Staatliches" rel="stylesheet">
+        <link href="https://fonts.googleapis.com/css?family=Bangers|PT+Sans:400,400i,700" rel="stylesheet">
+        <link href="https://fonts.googleapis.com/css?family=Cardo" rel="stylesheet">
         <!-- Latest compiled and minified CSS -->
 		<link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/4.0.0/css/bootstrap.min.css" integrity="sha384-Gn5384xqQ1aoWXA+058RXPxPg6fy4IWvTNh0E263XmFcJlSAwiGgFAW/dAiS6JXm" crossorigin="anonymous">
+        <link href="https://fonts.googleapis.com/css?family=Staatliches" rel="stylesheet">
         <!-- Icon library -->
     <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css">
 		<!-- Latest compiled and minified JavaScript -->
@@ -20,7 +21,7 @@
 
     <body>
         <div id="navbarStaticBlock"></div>
-        <nav id="navbar" class="header navbar navbar-expand-lg navbar-light sticky">
+        <nav id="navbar" class="header navbar navbar-expand-lg navbar-dark sticky">
           <a class="navbar-brand" href="#TOP">
             <div class="row">
               <div class="nopadding">
@@ -39,11 +40,11 @@
               <li class="nav-item">
                 <a class="nav-link" href="music.html">Music</a>
               </li>
-              <li class="nav-item" >
-                <a class="nav-link active" href="store.html">Store</a>
+              <li class="nav-item">
+                <a class="nav-link" href="store.html">Store</a>
               </li>
               <li class="nav-item">
-                <a class="nav-link" href="bio.html">Bio</a>
+                <a class="nav-link active" href="bio.html">Bio</a>
               </li>
               <li class="nav-item">
                 <a class="nav-link" href="events.html">Events</a>
@@ -58,75 +59,21 @@
           </div>
         </nav>
 
-        <section class="section" style="position:relative;">
-          <div style="background-image:url('../images/transparent-corner.png'); background-size:auto 50%; background-repeat:no-repeat; background-position:100% bottom; position: absolute; top:0; bottom:0;right:0;left:0;">
-          </div>
-            <div class="row">
-              <div class="col-sm-9 collidingtopcolumn">
-                <h1>THE TOMMEGUN STORE</h1>
-                <p style="font-size:1.5rem;">
-                  Purchase the latest TommeGun merchandise and deck yourself out from head to toe in his signature looks.
-                </p>
-                <div class="flex_container">
-                  <div class="shopitem">
-                    <img src="../images/merch-beanie.PNG" width="100%">
-                    <h1>TommeGun Beanie</h1>
-                    <small><b>$7.50</b></small>
-                    <br>
-                    <a class="" href="#" onclick="addToCart('Beanie',7.50);">Add To Cart</a>
-                  </div>
-                  <div class="shopitem">
-                    <img src="../images/merch-cap.PNG" width="100%">
-                    <h1>TommeGun Cap</h1>
-                    <small><b>$5.50</b></small>
-                    <br>
-                    <a class="" href="#" onclick="addToCart('Cap',5.50);">Add To Cart</a>
-                  </div>
-                  <div class="shopitem">
-                    <img id="merch-shirtimg" src="../images/merch-tshirtfront.PNG" width="100%">
-                    <h1>TommeGun T-Shirt</h1>
-                    <small style="flex:1 0"><b>$9.99</b></small>
-                    <br>
-                    <a href="#" onclick="flipMerch('tshirt');">View Other Side</a><br>
-                    <a href="#" onclick="addToCart('T-Shirt',9.99);">Add To Cart</a>
-                  </div>
-                  <div class="shopitem">
-                    <img id="merch-hoodieimg" src="../images/merch-hoodiefront.PNG" width="100%">
-                    <h1>TommeGun Hoodie</h1>
-                    <small><b>$59.99</b></small>
-                    <br>
-                    <a href="#" onclick="flipMerch('hoodie');">View Other Side</a><br>
-                    <a href="#" onclick="addToCart('Hoodie',59.99);">Add To Cart</a>
-                  </div>
-                </div>
-              </div>
-              <div class="col-sm-3" style="background-color:white;">
-                <h1 style="text-align:right;">My Cart</h1>
-                <p id="cartContent" style="text-align:right; font-size:1.5rem; border-bottom:2px solid black;">
-                  Your Cart Is Empty!
-                </p>
-                <p id="cartCost" style="text-align:right; font-size:1.5rem;">
-                  Total Cost : $0.00
-                </p>
-                <a href="order.html" style="float:right;">Checkout</a><br>
-                <a href="#" style="float:right;" onclick="emptyCart();">Empty Cart</a>
-              </div>
-            </div>
+        <section class="section">
+          
         </section>
 
-        <footer style="position:relative;">
-          <div id="tommegunFooterImage" style="background-image:url('../images/transparent-shady.png'); background-size:auto 80%; background-repeat:no-repeat; background-position:0% bottom; position: absolute; top:0; bottom:0;right:0;left:0;">
-          </div>
+        <footer>
             <div class="row">
               <div class="col-6">
                 JOIN <span class="hilight">TOMMEGUN'S</span> MAILING LIST AND FOLLOW ON SOCIAL MEDIA
               </div>
               <div class="col-6">
                 <div class="flex_container">
-                  <a href="https://www.youtube.com/channel/UCEeK56gv-Nff03pdnQzcaSg" class="fa fa-youtube"></a>
-                  <a href="https://soundcloud.com/tommegunbeats" class="fa fa-soundcloud"></a>
-                  <a href="https://www.instagram.com/1tommegun/" class="fa fa-instagram"></a>
-                  <a href="https://plus.google.com/100557519540215544917" class="fa fa-google"></a>
+                  <a href="#" target= "_blank" class="fa fa-youtube"></a>
+                  <a href="https://soundcloud.com/tommegunbeats" target= "_blank" class="fa fa-soundcloud"></a>
+                  <a href="https://www.instagram.com/1tommegun/" target= "_blank" class="fa fa-instagram"></a>
+                  <a href="https://twitter.com/1TommeGun" target= "_blank" class="fa fa-twitter"></a>
                 </div>
               </div>
             </div>
@@ -137,10 +84,6 @@
             </form>
             <br>
             <p class="disclaimer">This website created by team 2004-901 for the 2018-19 TSA Webmaster competition and does not actually promote Tommegun. Permissions from all individual properties used can be found on the about page. The name Tommegun does not intentionally bear any association with any firearm or any prohibited content specified in the TSA General Rules and Regulations.
-            <br>
-            <a href="../../index.html">Chapter Site</a></p>
-        </footer>
-        <!-- Our custom scripts -->
-        <script src="../js/scripts.js"></script>
+        </footer> 
     </body>
 </html>
