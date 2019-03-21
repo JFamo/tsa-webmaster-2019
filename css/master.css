@@ -65,6 +65,7 @@ section {
   padding-top: 3rem;
   margin:0 auto;
   min-height:80%;
+  padding-left:1rem;
 }
 .fullsection{
   max-width:100% !important;
@@ -545,7 +546,7 @@ footer {
 }
 
 .nav-item{
-  font-size:2rem;
+  font-size:1.5rem;
   padding-left:0.5rem;
   padding-right:0.5rem;
 }
