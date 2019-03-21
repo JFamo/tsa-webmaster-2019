@@ -306,6 +306,14 @@ a:hover {
   transform: translate(0,-2px);
   box-shadow: 2px 3px 6px rgba(0, 0, 0, 0.16), 2px 3px 6px rgba(0, 0, 0, 0.23);
 }
+.courseSection {
+  max-width:50%; float:left;
+  padding-left:1rem;
+  padding-right:1rem;	
+}
+.courseSection p{
+	padding-left:0;	
+}
 .teachercard {
   margin: 1rem;
   box-shadow: 0 3px 6px rgba(0, 0, 0, 0.16), 0 3px 6px rgba(0, 0, 0, 0.23);
@@ -716,11 +724,4 @@ footer {
 
 .awardimg{
 	
-}
-
-#designBriefLink{
-  position:fixed;
-  bottom:1rem;
-  left:1rem;
-  z-index:1000000;
 }
