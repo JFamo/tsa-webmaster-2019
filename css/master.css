@@ -355,7 +355,7 @@ a:hover {
   margin: 1rem;
   box-shadow: 0 3px 6px rgba(0, 0, 0, 0.16), 0 3px 6px rgba(0, 0, 0, 0.23);
   width:350px;
-  height:200px;
+  height:300px;
   border-radius:0.1rem;
   border-left: 2px solid #0a2463;
   transition: all 0.2s;
@@ -716,4 +716,11 @@ footer {
 
 .awardimg{
 	
+}
+
+#designBriefLink{
+  position:fixed;
+  bottom:1rem;
+  left:1rem;
+  z-index:1000000;
 }
