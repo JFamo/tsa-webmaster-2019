@@ -722,6 +722,17 @@ footer {
   }
 }
 
-.awardimg{
-	
+#eventDescriptions h4{
+  color:#0a2463;
+}
+
+.eventDiv{
+  padding-top:0.5rem;
+  padding-bottom:0.5rem;
+  min-height:75px;
+}
+
+.eventDiv img{
+  float:left;
+  padding-right:1rem;
 }
