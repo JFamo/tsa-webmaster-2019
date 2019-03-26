@@ -1,6 +1,7 @@
 function loadCourses(element){
 	var courseType = element.getAttribute('data-courseType');
 	var courses = document.getElementsByClassName("courseSection");
+	closeActiveCards();
 	for(var i = 0; i < courses.length; i++)
 	{
 		var thisCourse = courses[i];
@@ -16,6 +17,10 @@ function loadCourses(element){
 function loadProject(element, isInitial){
 	var projectTitle = element.getAttribute('data-projectTitle');
 	var projects = document.getElementsByClassName("projectSection");
+	closeActiveCards();
+	element.classList.remove("projectcard");
+	element.classList.add("projectcard_active");
+	element.classList.add("projectcard");
 	for(var i = 0; i < projects.length; i++)
 	{
 		var thisProject = projects[i];
@@ -36,6 +41,10 @@ function loadProject(element, isInitial){
 function loadOfficer(element, isInitial){
 	var officer = element.getAttribute('data-officer');
 	var officers = document.getElementsByClassName("projectSection");
+	closeActiveCards();
+	element.classList.remove("projectcard");
+	element.classList.add("projectcard_active");
+	element.classList.add("projectcard");
 	for(var i = 0; i < officers.length; i++)
 	{
 		var thisOfficer = officers[i];
@@ -51,5 +60,13 @@ function loadOfficer(element, isInitial){
 	if(!isInitial){
 		var elmnt = document.getElementById("officerData");
 		elmnt.scrollIntoView({ block: 'start',  behavior: 'smooth' });
+	}
+}
+
+function closeActiveCards(){
+	var cards = document.getElementsByClassName("projectcard_active");
+	for(var i = 0; i < cards.length; i++)
+	{
+		cards[i].classList.remove("projectcard_active");
 	}
 }

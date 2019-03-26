@@ -433,6 +433,10 @@ a:hover {
   box-shadow: 2px 3px 6px rgba(0, 0, 0, 0.16), 2px 3px 6px rgba(0, 0, 0, 0.23);
   background-color: #d62828;
 }
+.projectcard_active span{
+  box-shadow: 2px 3px 6px rgba(214, 40, 40, 0.25), 2px 3px 6px rgba(214, 40, 40, 0.35);
+  opacity:1;
+}
 @media only screen and (max-width: 575px) {
   .projectcard{
     width:125px;
