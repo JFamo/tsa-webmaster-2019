@@ -306,6 +306,14 @@ a:hover {
   transform: translate(0,-2px);
   box-shadow: 2px 3px 6px rgba(0, 0, 0, 0.16), 2px 3px 6px rgba(0, 0, 0, 0.23);
 }
+.courseSection {
+  max-width:50%; float:left;
+  padding-left:1rem;
+  padding-right:1rem;	
+}
+.courseSection p{
+	padding-left:0;	
+}
 .teachercard {
   margin: 1rem;
   box-shadow: 0 3px 6px rgba(0, 0, 0, 0.16), 0 3px 6px rgba(0, 0, 0, 0.23);
@@ -424,6 +432,10 @@ a:hover {
 .projectcard span:active{
   box-shadow: 2px 3px 6px rgba(0, 0, 0, 0.16), 2px 3px 6px rgba(0, 0, 0, 0.23);
   background-color: #d62828;
+}
+.projectcard_active span{
+  box-shadow: 2px 3px 6px rgba(214, 40, 40, 0.25), 2px 3px 6px rgba(214, 40, 40, 0.35);
+  opacity:1;
 }
 @media only screen and (max-width: 575px) {
   .projectcard{
@@ -714,13 +726,17 @@ footer {
   }
 }
 
-.awardimg{
-	
+#eventDescriptions h4{
+  color:#0a2463;
 }
 
-#designBriefLink{
-  position:fixed;
-  bottom:1rem;
-  left:1rem;
-  z-index:1000000;
+.eventDiv{
+  padding-top:0.5rem;
+  padding-bottom:0.5rem;
+  min-height:75px;
+}
+
+.eventDiv img{
+  float:left;
+  padding-right:1rem;
 }

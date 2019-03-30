@@ -38,6 +38,24 @@ function flipMerch(item){
 			elem.src = "../images/merch-tshirtfront.PNG";
 		}
 	}
+	else if(item=="facehoodie"){
+		elem = document.getElementById("merch-facehoodieimg");
+		if(elem.src.includes("merch-facehoodiefront")){
+			elem.src = "../images/merch-facehoodieback.PNG";
+		}
+		else{
+			elem.src = "../images/merch-facehoodiefront.PNG";
+		}
+	}
+	else if(item=="longsleeve"){
+		elem = document.getElementById("merch-longsleeveimg");
+		if(elem.src.includes("merch-longsleevefront")){
+			elem.src = "../images/merch-longsleeveback.PNG";
+		}
+		else{
+			elem.src = "../images/merch-longsleevefront.PNG";
+		}
+	}
 }
 
 function addToCart(itemname, cost){

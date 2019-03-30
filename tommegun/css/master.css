@@ -163,6 +163,10 @@ hr {
     -webkit-filter: opacity(10%);
     filter:opacity(10%);
   }
+  #tommegunOrderImage{
+    -webkit-filter: opacity(10%);
+    filter:opacity(10%);
+  }
 }
 @media only screen and (max-width: 575px) {
   p, ul, small {
@@ -502,7 +506,7 @@ footer a:hover{
 .tommeform input{
   background-color: #111111;
   border: 1px solid #FFD000;
-  color:#aaaaaa;
+  color: #aaaaaa;
   padding:1rem 1rem 1rem 1rem;
 }
 
