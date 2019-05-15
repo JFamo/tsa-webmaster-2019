@@ -59,8 +59,7 @@ function loadOfficer(element, isInitial){
 	   		thisOfficer.style.display = "none";
 	   	}
 	}
-	//No officer images for now, still hoping KP can do sketches
-	//document.getElementById("officerImage").src = element.getAttribute('data-imageURL');
+	document.getElementById("officer-opack-back").style.backgroundImage = "url('" + element.getAttribute('data-imageURL') + "')";
 	if(!isInitial){
 		var elmnt = document.getElementById("officerData");
 		//No scroll after states feedback
