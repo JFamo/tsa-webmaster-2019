@@ -7,15 +7,45 @@
         <link href="https://fonts.googleapis.com/css?family=Staatliches" rel="stylesheet">
         <!-- Latest compiled and minified CSS -->
 		<link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/4.0.0/css/bootstrap.min.css" integrity="sha384-Gn5384xqQ1aoWXA+058RXPxPg6fy4IWvTNh0E263XmFcJlSAwiGgFAW/dAiS6JXm" crossorigin="anonymous">
+    <link type="text/css" href="skin/css/jplayer.blue.monday.css" rel="stylesheet" />
         <!-- Icon library -->
     <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css">
 		<!-- Latest compiled and minified JavaScript -->
         <script src="https://code.jquery.com/jquery-3.2.1.slim.min.js" integrity="sha384-KJ3o2DKtIkvYIK3UENzmM7KCkRr/rE9/Qpg6aAZGJwFDMVNA/GpGFF93hXpG5KkN" crossorigin="anonymous"></script>
+        <script
+  src="https://code.jquery.com/jquery-1.12.4.min.js"
+  integrity="sha256-ZosEbRLbNQzLpnKIkEdrPv7lOy9C27hHQ+Xp8a4MxAQ="
+  crossorigin="anonymous"></script>
 		    <script src="https://cdnjs.cloudflare.com/ajax/libs/popper.js/1.12.9/umd/popper.min.js" integrity="sha384-ApNbgh9B+Y1QKtv3Rn7W3mgPxhU9K/ScQsAP7hUibX39j7fakFPskvXusvfa0b4Q" crossorigin="anonymous"></script>
         <script src="https://maxcdn.bootstrapcdn.com/bootstrap/4.0.0/js/bootstrap.min.js" integrity="sha384-JZR6Spejh4U02d8jOt6vLEHfe/JQGiRRSQQxSfFWpi1MquVdAyjUar5+76PVCmYl" crossorigin="anonymous"></script>
         <link rel="stylesheet" href="./css/master.css">
+        <script src="js/jquery.jplayer.min.js"></script>
         <!-- For Mobile Users -->
         <meta name="viewport" content="width=device-width, initial-scale=1">
+
+        <!-- Media Players -->
+        <script type="text/javascript">
+          $(document).ready(function(){
+            $("#jquery_jplayer_1").jPlayer({
+              ready: function () {
+                $(this).jPlayer("setMedia", {
+                  title: "KnowDaWae",
+                  wav: "music/KnowDaWae.wav",
+                  oga: "music/KnowDaWae.ogg"
+                });
+              },
+              cssSelectorAncestor: "#jp_container_1",
+              swfPath: "/js",
+              supplied: "m4a, oga",
+              useStateClassSkin: true,
+              autoBlur: false,
+              smoothPlayBar: true,
+              keyEnabled: true,
+              remainingDuration: true,
+              toggleDuration: true
+            });
+          });
+        </script>
     </head>
     <body>
         <div id="navbarStaticBlock" style="display:none;"></div>
@@ -131,21 +161,53 @@
               </center>
               </div>
               <div class="col-sm-6 bodysection">
-                    <center>
-                    <iframe width="100%" height="300" scrolling="no" frameborder="no" allow="autoplay" src="https://w.soundcloud.com/player/?url=https%3A//api.soundcloud.com/tracks/503726712&color=%23cc0000&auto_play=false&hide_related=false&show_comments=true&show_user=true&show_reposts=false&show_teaser=true&visual=true"></iframe>
-                    </center>
-                    <h1>Kno The Meaning</h1>
+                    <br><br><br>
+                    <h1>Know Da Wae</h1>
                     <h3>Latest Release</h3>
-                    <p><b>Length:</b> 4:05</p>
+                    <p><b>Length:</b> 4:06</p>
                     <p><b>Released:</b> Nov 18</p>
                     <br>
-                    <a class="button" target="_blank" href="https://soundcloud.com/tommegunbeats/kno-the-meaning">Listen on SoundCloud</a><br><br>
-                    <a class="button" href="pages/music.html">More Music</a>
+                    <a class="button" href="pages/music.html" style="margin-bottom:2rem;">More Music</a>
               </div>
               <div class="col-sm-6">
-                <div>
-                <iframe width="100%" height="600" scrolling="no" frameborder="no" allow="autoplay" src="https://w.soundcloud.com/player/?url=https%3A//api.soundcloud.com/users/200197568&color=%23ff5500&auto_play=false&hide_related=false&show_comments=true&show_user=true&show_reposts=false&show_teaser=true&visual=true"></iframe>
-                </div>
+                <img src="images/tomme_avatar.jpg" style="max-width:420px; height:auto;"/>
+                <div id="jquery_jplayer_1" class="jp-jplayer"></div>
+                  <div id="jp_container_1" class="jp-audio" role="application" aria-label="media player">
+                    <div class="jp-type-single">
+                      <div class="jp-gui jp-interface">
+                        <div class="jp-controls">
+                          <button class="jp-play" role="button" tabindex="0">play</button>
+                          <button class="jp-stop" role="button" tabindex="0">stop</button>
+                        </div>
+                        <div class="jp-progress">
+                          <div class="jp-seek-bar">
+                            <div class="jp-play-bar"></div>
+                          </div>
+                        </div>
+                        <div class="jp-volume-controls">
+                          <button class="jp-mute" role="button" tabindex="0">mute</button>
+                          <button class="jp-volume-max" role="button" tabindex="0">max volume</button>
+                          <div class="jp-volume-bar">
+                            <div class="jp-volume-bar-value"></div>
+                          </div>
+                        </div>
+                        <div class="jp-time-holder">
+                          <div class="jp-current-time" role="timer" aria-label="time">&nbsp;</div>
+                          <div class="jp-duration" role="timer" aria-label="duration">&nbsp;</div>
+                          <div class="jp-toggles">
+                            <button class="jp-repeat" role="button" tabindex="0">repeat</button>
+                          </div>
+                        </div>
+                      </div>
+                      <div class="jp-details">
+                        <div class="jp-title" aria-label="title">&nbsp;</div>
+                      </div>
+                      <div class="jp-no-solution">
+                        <span>Update Required</span>
+                        To play the media you will need to either update your browser to a recent version or update your <a href="http://get.adobe.com/flashplayer/" target="_blank">Flash plugin</a>.
+                      </div>
+                    </div>
+                  </div>
               </div>
             </div>
         </section> 
@@ -190,14 +252,14 @@
           </div>
             <div class="row">
               <div class="col-6">
-                JOIN <span class="hilight">L.T. Skiddle'S</span> MAILING LIST AND FOLLOW ON SOCIAL MEDIA
+                JOIN <span class="hilight">L.T. Skiddle's</span> MAILING LIST AND FOLLOW ON SOCIAL MEDIA
               </div>
               <div class="col-6">
                 <div class="flex_container">
-                  <a href="https://www.youtube.com/channel/UCEeK56gv-Nff03pdnQzcaSg" class="fa fa-youtube"></a>
-                  <a href="https://soundcloud.com/tommegunbeats" class="fa fa-soundcloud"></a>
-                  <a href="https://www.instagram.com/1tommegun/" class="fa fa-instagram"></a>
-                  <a href="https://plus.google.com/100557519540215544917" class="fa fa-google"></a>
+                  <a href="#" class="fa fa-youtube"></a>
+                  <a href="#" class="fa fa-soundcloud"></a>
+                  <a href="#" class="fa fa-instagram"></a>
+                  <a href="#" class="fa fa-google"></a>
                 </div>
               </div>
             </div>
