@@ -752,3 +752,15 @@ footer {
   float:left;
   padding-right:1rem;
 }
+
+.teacherpic{
+  object-fit: cover;
+  width:200px;
+  height:200px;
+}
+
+@media only screen and (max-width: 575px) {
+  .teacherpic{
+    margin-top:4rem;
+  }
+}
