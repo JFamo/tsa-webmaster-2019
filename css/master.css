@@ -374,12 +374,11 @@ a:hover {
 .awardcard {
   margin: 1rem;
   box-shadow: 0 3px 6px rgba(0, 0, 0, 0.16), 0 3px 6px rgba(0, 0, 0, 0.23);
-  width:350px;
-  height:300px;
   border-radius:0.1rem;
   border-left: 2px solid #0a2463;
   transition: all 0.2s;
   overflow-x:hidden;
+  padding:2rem 2rem 2rem 2rem;
 }
 .awardcard p{
   padding: 0.75rem 1rem 0rem 1rem;
@@ -402,6 +401,7 @@ a:hover {
 .awardcard:hover{
   transform: translate(0,-2px);
   box-shadow: 2px 3px 6px rgba(0, 0, 0, 0.16), 2px 3px 6px rgba(0, 0, 0, 0.23);
+  background-color:#FBFBFB;
 }
 .awardcard div{
   padding: 0; 
@@ -707,7 +707,7 @@ footer {
 .crossTitleText{
   color:white;
   position:absolute;
-  bottom:0;
+  bottom:40%;
   width:100%;
   font-size:8rem;
   text-shadow:0 0 20px black;
@@ -729,7 +729,7 @@ footer {
   line-height:1;
 }
 
-@media only screen and (max-width: 830px) {
+@media only screen and (max-width: 575px) {
   .crossTitleText{
     font-size:16vw;
   }
@@ -762,5 +762,9 @@ footer {
 @media only screen and (max-width: 575px) {
   .teacherpic{
     margin-top:4rem;
+  }
+
+  .titleimg{
+    display:none;
   }
 }
