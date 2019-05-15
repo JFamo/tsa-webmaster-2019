@@ -57,7 +57,7 @@ body {
   padding: 0 0;
   font-family: 'Muli', sans-serif;
   font-size: 1.25rem;
-  line-height: 1.5;
+  line-height: 3rem;
   background-color: white;
 }
 section {
@@ -66,6 +66,15 @@ section {
   margin:0 auto;
   min-height:80%;
   padding-left:1rem;
+  border-left:3px solid #E9EBED;
+  border-right:3px solid #E9EBED;
+}
+@media only screen and (max-width: 1200px) {
+  section {
+    border-left:0px solid #E9EBED;
+    border-right:0px solid #E9EBED;
+    padding-left:0rem;
+  }
 }
 .fullsection{
   max-width:100% !important;
@@ -113,6 +122,9 @@ ul {
 }
 a {
   color: #0a2463;
+}
+.page-link{
+  color: #3e92cc !important;
 }
 a:hover {
   color: #d62828;
@@ -362,12 +374,11 @@ a:hover {
 .awardcard {
   margin: 1rem;
   box-shadow: 0 3px 6px rgba(0, 0, 0, 0.16), 0 3px 6px rgba(0, 0, 0, 0.23);
-  width:350px;
-  height:300px;
   border-radius:0.1rem;
   border-left: 2px solid #0a2463;
   transition: all 0.2s;
   overflow-x:hidden;
+  padding:2rem 2rem 2rem 2rem;
 }
 .awardcard p{
   padding: 0.75rem 1rem 0rem 1rem;
@@ -390,6 +401,7 @@ a:hover {
 .awardcard:hover{
   transform: translate(0,-2px);
   box-shadow: 2px 3px 6px rgba(0, 0, 0, 0.16), 2px 3px 6px rgba(0, 0, 0, 0.23);
+  background-color:#FBFBFB;
 }
 .awardcard div{
   padding: 0; 
@@ -695,7 +707,7 @@ footer {
 .crossTitleText{
   color:white;
   position:absolute;
-  bottom:0;
+  bottom:40%;
   width:100%;
   font-size:8rem;
   text-shadow:0 0 20px black;
@@ -717,7 +729,7 @@ footer {
   line-height:1;
 }
 
-@media only screen and (max-width: 830px) {
+@media only screen and (max-width: 575px) {
   .crossTitleText{
     font-size:16vw;
   }
@@ -739,4 +751,20 @@ footer {
 .eventDiv img{
   float:left;
   padding-right:1rem;
+}
+
+.teacherpic{
+  object-fit: cover;
+  width:200px;
+  height:260px;
+}
+
+@media only screen and (max-width: 575px) {
+  .teacherpic{
+    margin-top:4rem;
+  }
+
+  .titleimg{
+    display:none;
+  }
 }

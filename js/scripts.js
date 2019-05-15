@@ -1,3 +1,4 @@
+//Function to use the courseType attribute to load course divs of matching type on education page
 function loadCourses(element){
 	var courseType = element.getAttribute('data-courseType');
 	var courses = document.getElementsByClassName("courseSection");
@@ -14,6 +15,7 @@ function loadCourses(element){
 	}
 }
 
+//Function to load project by ID on education page
 function loadProject(element, isInitial){
 	var projectTitle = element.getAttribute('data-projectTitle');
 	var projects = document.getElementsByClassName("projectSection");
@@ -34,10 +36,12 @@ function loadProject(element, isInitial){
 	document.getElementById("projectImage").src = element.getAttribute('data-imageURL');
 	if(!isInitial){
 		var elmnt = document.getElementById("projectData");
-		elmnt.scrollIntoView({ block: 'start',  behavior: 'smooth' });
+		//No scroll after states feedback
+		//elmnt.scrollIntoView({ block: 'start',  behavior: 'smooth' });
 	}
 }
 
+//Function to load officer with matching attribute and ID on chapter page
 function loadOfficer(element, isInitial){
 	var officer = element.getAttribute('data-officer');
 	var officers = document.getElementsByClassName("projectSection");
@@ -55,14 +59,15 @@ function loadOfficer(element, isInitial){
 	   		thisOfficer.style.display = "none";
 	   	}
 	}
-	//No officer images for now, still hoping KP can do sketches
-	//document.getElementById("officerImage").src = element.getAttribute('data-imageURL');
+	document.getElementById("officer-opack-back").style.backgroundImage = "url('" + element.getAttribute('data-imageURL') + "')";
 	if(!isInitial){
 		var elmnt = document.getElementById("officerData");
-		elmnt.scrollIntoView({ block: 'start',  behavior: 'smooth' });
+		//No scroll after states feedback
+		//elmnt.scrollIntoView({ block: 'start',  behavior: 'smooth' });
 	}
 }
 
+//Function to reset active class on project cards
 function closeActiveCards(){
 	var cards = document.getElementsByClassName("projectcard_active");
 	for(var i = 0; i < cards.length; i++)
