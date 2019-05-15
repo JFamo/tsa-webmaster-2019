@@ -123,6 +123,9 @@ ul {
 a {
   color: #0a2463;
 }
+.page-link{
+  color: #3e92cc !important;
+}
 a:hover {
   color: #d62828;
 }
