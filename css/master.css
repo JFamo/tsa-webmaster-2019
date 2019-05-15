@@ -756,7 +756,7 @@ footer {
 .teacherpic{
   object-fit: cover;
   width:200px;
-  height:200px;
+  height:260px;
 }
 
 @media only screen and (max-width: 575px) {
