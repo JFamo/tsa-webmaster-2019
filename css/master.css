@@ -66,6 +66,15 @@ section {
   margin:0 auto;
   min-height:80%;
   padding-left:1rem;
+  border-left:3px solid #E9EBED;
+  border-right:3px solid #E9EBED;
+}
+@media only screen and (max-width: 1200px) {
+  section {
+    border-left:0px solid #E9EBED;
+    border-right:0px solid #E9EBED;
+    padding-left:0rem;
+  }
 }
 .fullsection{
   max-width:100% !important;
