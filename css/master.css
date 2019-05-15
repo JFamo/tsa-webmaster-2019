@@ -291,16 +291,8 @@ a:hover {
   margin: 1rem;
   padding: 0;
 }
-.coursecard {
-  margin: 1rem;
-  box-shadow: 0 3px 6px rgba(0, 0, 0, 0.16), 0 3px 6px rgba(0, 0, 0, 0.23);
-  width:200px;
-  height:80px;
-  border-radius:0.1rem;
-  border-left: 2px solid #0a2463;
-  transition: all 0.2s;
-  overflow-x:hidden;
-  cursor: pointer;
+.coursecard{
+  text-align:center;
 }
 .coursecard p{
   padding: 0.75rem 1rem 0rem 1rem;
@@ -309,17 +301,46 @@ a:hover {
   font-family: 'Poppins', sans-serif;
   font-weight: 700;
 }
-.coursecard small{
-  padding: 0rem 1rem 0rem 1rem;
-  color: black;
-  font-size: 0.6rem;
+.coursecard span{
+  border-radius: 50%;
+  width:120px;
+  height:120px;
+  background-size:80% auto;
+  background-repeat: no-repeat;
+  background-position: center;
+  display:inline-block;
+  transition: all 0.2s ease-in-out;
+  opacity:0.6;
+  cursor:pointer;
 }
-.coursecard:hover{
-  transform: translate(0,-2px);
+.coursecard span:hover{
   box-shadow: 2px 3px 6px rgba(0, 0, 0, 0.16), 2px 3px 6px rgba(0, 0, 0, 0.23);
+  opacity:1;
+}
+.coursecard span:active{
+  box-shadow: 2px 3px 6px rgba(0, 0, 0, 0.16), 2px 3px 6px rgba(0, 0, 0, 0.23);
+  background-color: #d62828;
+}
+.coursecard_active span{
+  box-shadow: 2px 3px 6px rgba(214, 40, 40, 0.25), 2px 3px 6px rgba(214, 40, 40, 0.35);
+  opacity:1;
+}
+@media only screen and (max-width: 575px) {
+  .coursecard{
+    width:125px;
+    height:90px;
+  }
+  .coursecard span{
+    width: 60px;
+    height: 60px;
+  }
+  .projectcard p{
+    padding:0;
+    font-size:0.75rem;
+    line-height:1;
+  }
 }
 .courseSection {
-  max-width:50%; float:left;
   padding-left:1rem;
   padding-right:1rem;	
 }
@@ -402,6 +423,7 @@ a:hover {
   transform: translate(0,-2px);
   box-shadow: 2px 3px 6px rgba(0, 0, 0, 0.16), 2px 3px 6px rgba(0, 0, 0, 0.23);
   background-color:#FBFBFB;
+  cursor:pointer;
 }
 .awardcard div{
   padding: 0; 
