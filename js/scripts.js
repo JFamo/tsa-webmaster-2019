@@ -2,6 +2,9 @@
 function loadCourses(element){
 	var courseType = element.getAttribute('data-courseType');
 	var courses = document.getElementsByClassName("courseSection");
+	element.classList.remove("coursecard");
+	element.classList.add("coursecard_active");
+	element.classList.add("coursecard");
 	closeActiveCards();
 	for(var i = 0; i < courses.length; i++)
 	{
@@ -73,5 +76,10 @@ function closeActiveCards(){
 	for(var i = 0; i < cards.length; i++)
 	{
 		cards[i].classList.remove("projectcard_active");
+	}
+	var cards = document.getElementsByClassName("coursecard_active");
+	for(var i = 0; i < cards.length; i++)
+	{
+		cards[i].classList.remove("coursecard_active");
 	}
 }
